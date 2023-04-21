@@ -9,7 +9,7 @@ export function Highlights() {
 
     return (
         <div className={style["container-main"]}>
-            <h2 className={style.titulo}>Destacadas</h2>
+            {/* <h2 className={style.titulo}>Destacadas</h2> */}
             <div className={style["container-highlights"]}>
                 <div className={style["container"]}>
                     <Image className={style["img-config"]} src={img} alt="1" responsive="true"/>

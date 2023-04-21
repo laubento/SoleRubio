@@ -1,0 +1,11 @@
+.container-main{
+    background-color: #6F6D6D;
+    display: flex;
+    justify-content: center;
+}
+.container-main p{
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Trispace';
+}

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 
+
 :root {
   --main-color: #5F5D5D; 
   --main-background: #F5F5F5;
@@ -9,7 +10,7 @@
 }
 
 body {
-  margin: 2rem;
+  margin: 0;
   color: var(--main-color);
   background: var(--main-background);
   font-family: var(--font-primary);

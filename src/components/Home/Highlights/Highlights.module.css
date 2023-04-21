@@ -183,12 +183,11 @@
     }
 }
 @media(max-width: 450px){
+    .container-main{
+        height: 100%;
+    }
     .container-highlights{
         display: block;
-    }
-    .container-main{
-        width: 455px;
-        height: 566px;
     }
     .container{
         margin-bottom: 5px;
@@ -197,6 +196,5 @@
 @media(max-width: 320px){
     .container-main{
         width: 305px;
-        height: 246px;
     }
 }
