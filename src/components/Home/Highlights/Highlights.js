@@ -12,7 +12,7 @@ export function Highlights() {
             <h2 className={style.titulo}>Destacadas</h2>
             <div className={style["container-highlights"]}>
                 <div className={style["container"]}>
-                    <Image className={style["img-config"]} src={img} alt="1"/>
+                    <Image className={style["img-config"]} src={img} alt="1" responsive="true"/>
                     <p>Imagen 1</p>
                     <div className={style.hover}>
                         <h5>REVISTA PARA TI</h5>
@@ -26,7 +26,7 @@ export function Highlights() {
                     </div>
                 </div>
                 <div className={style["container"]}>
-                    <Image className={style["img-config"]} src={img} alt="1"/>
+                    <Image className={style["img-config"]} src={img} alt="1" />
                     <p>Imagen 3</p>
                     <div className={style.hover}>
                         <h5>E-MAGAZINE</h5>
