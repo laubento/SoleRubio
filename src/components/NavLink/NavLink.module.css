@@ -1,0 +1,8 @@
+
+  .link a[aria-current ='page'] {
+    border: solid var(--main-color) 2px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom: none;
+
+  }
