@@ -1,9 +1,7 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Navbar from '../components/Home/NavBar/NavBar'
-
-
-
+import { Highlights } from '@/components/Home/Highlights/Highlights'
+import style from '../styles/index.module.css' 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -12,7 +10,6 @@ export default function Home() {
       <Head>
         <title>Sole Rubio</title>  
       </Head>
-      <Navbar />
     </main>
   )
 }
