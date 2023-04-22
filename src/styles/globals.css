@@ -15,3 +15,9 @@ body {
   font-family: var(--font-primary);
 }
 
+a {
+  color: var(--main-color); 
+  font-family: var(--font-primary);   
+  text-decoration: none;
+}
+

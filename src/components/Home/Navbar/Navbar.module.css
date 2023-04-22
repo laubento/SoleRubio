@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+}
+
+.btnContainer {
+  height: 3rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* border-bottom: solid var(--main-color) 2px;      */
+}
+
+/* .container button { */
+.container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  /* margin: 0.5px; */
+  border: solid var(--main-color) 2px;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.container button:active {
+  border-bottom: solid var(--main-background) 5px;
+}
+
+.container ul {
+  display: inline-block;
+}
