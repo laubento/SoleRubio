@@ -9,4 +9,8 @@
     padding: 20px;
     font-family: 'Trispace';
 }
-/* @media(max-width:) */
+@media(max-width: 650px){
+    .container-main p{
+        font-size: 10px;
+    }
+}
