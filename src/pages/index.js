@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import { Highlights } from '@/components/Home/Highlights/Highlights'
-import { Footer } from '@/components/Home/Footer/Footer'
+import { Footer } from '@/components/Footer/Footer'
 import { Extras } from '@/components/Extras/Extras'
 import { Slider } from '@/components/Home/Slider/Slider'
 import style from '../styles/index.module.css' 
@@ -25,9 +25,9 @@ export default function Home() {
         <Extras props={'line'} />
       </div>
 
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
 
     </main>
   )

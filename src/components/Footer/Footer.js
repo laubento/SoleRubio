@@ -5,7 +5,7 @@ export function Footer(){
 
     return(
         <div className={style["container-main"]}>
-            <p> ☯ SOLERUBIO | 2023 BY Marca</p>
+            <p> &#169; SOLERUBIO | 2023 BY Marca</p>
         </div>
     )
 }

@@ -16,7 +16,7 @@ const Navbar = () => {
             width="auto"
             height={50}
             responsive= 'true'
-            style={{ position: "absolute", top: "2rem" }}
+            style={{ position: "absolute", top: "3rem" }}
           />
         </Link>
         <NavLink href="/" children="HOME" />
