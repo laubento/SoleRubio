@@ -14,7 +14,6 @@ const Navbar = () => {
         <NavLink href="/" children="HOME" />
         <NavLink href="/campaigns" children="CAMPAÑAS" />
         <NavLink href="/backstage" children="BACKSTAGE" />
-        {/* <Link href="/press">CONTACTO</Link> */}
         <NavLink href="/press" children="PRESS" />
         <NavLink href="/press" children="CONTACT" />
       </div>
