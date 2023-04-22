@@ -15,11 +15,11 @@ body {
   color: var(--main-color);
   background: var(--main-background);
   font-family: var(--font-primary);
+  font-size: 0.8rem;
 }
 
-
 a {
-  color: var(--secondary-color); 
+  color: var(--main-color); 
   font-family: var(--font-primary);   
   text-decoration: none;
 }
