@@ -8,12 +8,14 @@
   --font-secondary: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
 body {
   margin: 2rem;
   color: var(--main-color);
   background: var(--main-background);
   font-family: var(--font-primary);
 }
+
 
 a {
   color: var(--main-color); 

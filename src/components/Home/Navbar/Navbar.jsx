@@ -1,21 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
-const Navbar = () => {
+import NavLink from "@/components/NavLink/NavLink";
 
-  
+
+const Navbar = () => {
   return (
     <div className={styles.container}>
       <div>acá viene el logo</div>
-      <div className={styles.btnContainer}>
-        {/* <Link href="/home">Home</Link> */}
+      <div className={styles.btnContainer}>      
+       
 
-        <Link href="/campaigns" className={styles.link}>
-          CAMPAÑAS
-        </Link>
-        <Link href="/backstage">BACKSTAGE</Link>
-        <Link href="/press">PRENSA</Link>
-        <Link href="/press">CONTACTO</Link>
+        <NavLink href="/" children="HOME" />
+        <NavLink href="/campaigns" children="CAMPAÑAS" />
+        <NavLink href="/backstage" children="BACKSTAGE" />
+        {/* <Link href="/press">CONTACTO</Link> */}
+        <NavLink href="/press" children="PRESS" />
+        <NavLink href="/press" children="CONTACT" />
       </div>
     </div>
   );
