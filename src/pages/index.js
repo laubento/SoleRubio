@@ -1,4 +1,5 @@
-import Budget from "@/components/Home/Budget/Budget";
+import Budget from "@/components/Home/Contact/Budget";
+import Contact from "@/components/Home/Contact/Contact";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
