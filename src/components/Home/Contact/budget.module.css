@@ -1,17 +1,46 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    
+    width: 30rem;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: blueviolet; */
 }
 
 .input {
     background-color: transparent;
     border: none;
-    border-bottom: solid 0.5px;
+    border-bottom: solid 0.5px var(--main-color);
+}
+
+.input:focus{
+    outline-style: none;
+    font-family: var(--font-secondary);
+    color: var(--main-color);
+
 }
 
 .label {
+    /* font-size: smaller; */
+    letter-spacing: 0.1em;
+    align-self: flex-start;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 60%;
+}
+
+.button {
+    padding: 0.5em;
     font-size: smaller;
     letter-spacing: 0.1em;
+    font-family: var(--font-primary);
+    color: var(--main-color);
+    display: inline;
+    background-color: transparent;
+    border: solid .5px;
+    border-bottom: none;
 }
