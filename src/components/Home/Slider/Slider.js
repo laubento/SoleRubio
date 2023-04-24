@@ -1,7 +1,7 @@
 import style from './Slider.module.css'
 import Image from 'next/image'
-import slides from '../../../images/Slides.jpeg'
-import slides2 from '../../../images/Slides2.jpeg'
+import slides from '../../../images/Slides.jpg'
+import slides2 from '../../../images/Slides2.jpg'
 
 
 export function Slider() {
