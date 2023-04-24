@@ -9,7 +9,7 @@ const Layout = ({ title, description, children }) => {
   const section = children.type.name;
  
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>
           {title}/{section}
@@ -17,7 +17,7 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={description} />
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main className="container">{children}</main>
       <Footer />
     </div>
   );
