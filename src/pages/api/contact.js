@@ -17,7 +17,7 @@ export default function (req, res) {
     from: ACCOUNT,
     to: "agus.zanetti4@gmail.com",
     subject: `Mensaje de ${req.body.name}`,
-    text: req.body.message,
+    text: req.body.message + req.body.email,
   };
 
   transporter.sendMail(mailData, function (err, info) {

@@ -39,62 +39,60 @@ const Budget = () => {
   };
 
   return (
-    <div>
-      <form className={style.container}>
-        <div className={style.fields}>
-          <input
+    <form className={style.container}>
+      <div className={style.fields}>
+        <input
+          className={style.input}
+          type="text"
+          name="name"
+          required
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        />
+        <label className={style.label} for="name">
+          nombre
+        </label>
+      </div>
+      <div className={style.fields}>
+        <input
+          className={style.input}
+          type="email"
+          name="email"
+          required
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+        <label className={style.label} for="email">
+          email
+        </label>
+      </div>
+      <div className={style.fields}>
+        <div className={style.message}>
+          <textarea
             className={style.input}
             type="text"
-            name="name"
+            name="message"
             required
             onChange={(e) => {
-              setName(e.target.value);
+              setMessage(e.target.value);
             }}
           />
-          <label className={style.label} for="name">
-            nombre
-          </label>
-        </div>
-        <div className={style.fields}>
-          <input
-            className={style.input}
-            type="email"
-            name="email"
-            required
-            onChange={(e) => {
-              setEmail(e.target.value);
+          <button
+            className={style.button}
+            onClick={(e) => {
+              handleSubmit(e);
             }}
-          />
-          <label className={style.label} for="email">
-            email
-          </label>
+          >
+            ENVIAR
+          </button>
         </div>
-        <div className={style.fields}>
-          <div>
-            <input
-              className={style.input}
-              type="text"
-              name="message"
-              required
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            />
-            <button
-              className={style.button}
-              onClick={(e) => {
-                handleSubmit(e);
-              }}
-            >
-              ENVIAR
-            </button>
-          </div>
-          <label className={style.label} for="message">
-            mensaje
-          </label>
-        </div>
-      </form>
-    </div>
+        <label className={style.label} for="message">
+          mensaje
+        </label>
+      </div>
+    </form>
   );
 };
 
