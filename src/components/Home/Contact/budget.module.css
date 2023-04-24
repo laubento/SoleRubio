@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    /* width: 30rem; */
     align-items: center;
     justify-content: center;
     /* background-color: blueviolet; */
@@ -11,6 +11,7 @@
     background-color: transparent;
     border: none;
     border-bottom: solid 0.5px var(--main-color);
+    width: 100%;
 }
 
 .input:focus {
@@ -30,7 +31,7 @@
 
 .message {
     
-    background-color:aquamarine;
+    display: flex;
 }
 
 .label {
@@ -44,7 +45,7 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    width: 60%;
+    width: 100%;
 }
 
 .button {
