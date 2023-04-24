@@ -57,7 +57,7 @@
 }
 .hover h5{
     color: rgb(0, 0, 0);
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 100;
     margin: 0;
 }
@@ -131,8 +131,7 @@
         font-size: 48px;
     }
     .container-main{
-        width: 100%;
-        padding: 10px;
+        width: 97%;
     }
     .container-highlights{
         grid-gap: 20px;
@@ -141,7 +140,7 @@
         height: 144px;
     }
     .hover h5{
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 @media(max-width: 900px){
@@ -155,7 +154,7 @@
         height: 136px;
     }
     .hover h5{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 @media(max-width: 750px){
@@ -172,7 +171,7 @@
         height: 122px;
     }
     .hover h5{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @media(max-width: 650px){
@@ -183,7 +182,7 @@
         height: 110px;
     }
     .hover h5{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 @media(max-width: 550px){
@@ -194,7 +193,7 @@
         height: 99px;
     }
     .hover h5{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 @media(max-width: 450px){
