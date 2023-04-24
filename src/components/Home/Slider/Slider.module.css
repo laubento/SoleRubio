@@ -21,19 +21,16 @@
     object-fit: cover;
 }
 .image-backgroud-one{
-    animation: backgroudOne 7s infinite alternate ease-in-out;
+    animation: backgroudOne 6s infinite alternate ease-in-out;
     position: absolute;
 }
 .image-backgroud-two{
-    animation: backgroudTwo 7s infinite alternate ease-in-out;
+    animation: backgroudTwo 6s infinite alternate ease-in-out;
     position: absolute;
 }
 @keyframes backgroudOne{
     0%{
         opacity: 0;
-    }
-    20%{
-        opacity: 0.3;
     }
     100%{
         opacity: 0.3;
@@ -41,9 +38,6 @@
 }
 @keyframes backgroudTwo{
     0%{
-        opacity: 0.3;
-    }
-    80%{
         opacity: 0.3;
     }
     100%{
@@ -72,18 +66,12 @@
     0%{
         opacity: 0;
     }
-    80%{
-        opacity: 1;
-    }
     100%{
         opacity: 1;
     }
 }
 @keyframes sliderTwo{
     0%{
-        opacity: 1;
-    }
-    20%{
         opacity: 1;
     }
     100%{
