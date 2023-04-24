@@ -70,8 +70,8 @@ const Budget = () => {
           </label>
         </div>
         <div className={style.fields}>
-          <div>
-            <input
+          <div className={style.message}>
+            <textarea
               className={style.input}
               type="text"
               name="message"

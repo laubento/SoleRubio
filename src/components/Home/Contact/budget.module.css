@@ -1,8 +1,8 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 30rem;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     /* background-color: blueviolet; */
 }
@@ -13,15 +13,29 @@
     border-bottom: solid 0.5px var(--main-color);
 }
 
-.input:focus{
+.input:focus {
     outline-style: none;
     font-family: var(--font-secondary);
     color: var(--main-color);
 
 }
 
+.inputMessage {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px var(--main-color);
+    
+    /* background-color: var(--main-color); */
+}
+
+.message {
+    
+    background-color:aquamarine;
+}
+
 .label {
     /* font-size: smaller; */
+    padding-top: 0.3rem;
     letter-spacing: 0.1em;
     align-self: flex-start;
 }
@@ -39,8 +53,12 @@
     letter-spacing: 0.1em;
     font-family: var(--font-primary);
     color: var(--main-color);
-    display: inline;
+    /* display: inline; */
     background-color: transparent;
     border: solid .5px;
     border-bottom: none;
+}
+
+.button:hover {
+    cursor: pointer;
 }

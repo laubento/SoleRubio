@@ -26,3 +26,10 @@ a {
   text-decoration: none;
 }
 
+.container{
+  max-width: 1200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

@@ -9,7 +9,7 @@ const Layout = ({ title, description, children }) => {
   const section = children.type.name;
  
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>
           {title}/{section}
