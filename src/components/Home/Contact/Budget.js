@@ -50,7 +50,7 @@ const Budget = () => {
             setName(e.target.value);
           }}
         />
-        <label className={style.label} for="name">
+        <label className={style.label} htmlFor="name">
           nombre
         </label>
       </div>
@@ -64,7 +64,7 @@ const Budget = () => {
             setEmail(e.target.value);
           }}
         />
-        <label className={style.label} for="email">
+        <label className={style.label} htmlFor="email">
           email
         </label>
       </div>
@@ -88,7 +88,7 @@ const Budget = () => {
             ENVIAR
           </button>
         </div>
-        <label className={style.label} for="message">
+        <label className={style.label} htmlFor="message">
           mensaje
         </label>
       </div>

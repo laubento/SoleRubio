@@ -1,0 +1,15 @@
+
+
+
+
+.container-campaigns ul{
+    list-style: none;
+    padding: 0;
+}
+.container-campaigns li{
+    font-family: var(--font-primary);
+    color: rgba(44, 44, 44, 0.945);
+    font-size: 16px;
+    margin: 15px 0px;
+    font-weight: 600;
+}

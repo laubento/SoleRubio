@@ -13,5 +13,15 @@ export const campaigns = [
     name: "prueba3",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU",
+  },
+  {
+    name: "prueba4",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU",
+  },
+  {
+    name: "prueba5",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU",
   }
 ];

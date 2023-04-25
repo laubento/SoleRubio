@@ -20,13 +20,12 @@ const Pagination = ({ campaigns, campaignsPerPage, paging, page }) => {
 
       <div>
       <nav className={styles.pages}>
-        <ul>
           {pages?.map((el, key) => (
             <button className={page -1 === key? styles.btnActive : styles.btnPasive} key={key} onClick={() => paging(el)}>
               {el}
             </button>
           ))}
-        </ul>
+        
       </nav>
     </div>
 
