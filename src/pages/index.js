@@ -30,13 +30,11 @@ export default function Home() {
         <Highlights />
         <Extras props={"line"} />
       </div>
-      {/* <div className={style["container-highlights"]}>
+      <div className={style["container-highlights"]}>
         <Contact />
-      </div> */}
+      </div>
 
-      {/* <div>
-        <Footer />
-      </div> */}
+
     </main>
   );
 }
