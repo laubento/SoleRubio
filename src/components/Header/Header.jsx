@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 //next
 import Image from "next/image";
 import Link from "next/link";
@@ -12,20 +13,20 @@ import Menu from './Menu/Menu'
 import styles from "./Header.module.css";
 
 const Header = () => {
-
-    //declaro un estado para manejar el menú desplegable
-    const [open, setOpen] = useState(false);
-
-    //seteo el estado del menú desplegable para abrir o cerrar el menú
-    const handleClick = () => {
-      open ? setOpen(false) : setOpen(true);
-    };
-   
-    //seteo el estado del menú desplegable para cerrarlo cuando se selecciona un link de navegación
-    const handleClose = () => {
-      setOpen(false)
-    }
-
+  
+  //declaro un estado para manejar el menú desplegable
+  const [open, setOpen] = useState(false);
+  
+  //seteo el estado del menú desplegable para abrir o cerrar el menú
+  const handleClick = () => {
+    open ? setOpen(false) : setOpen(true);
+  };
+  
+  //seteo el estado del menú desplegable para cerrarlo cuando se selecciona un link de navegación
+  const handleClose = () => {
+    setOpen(false)
+  }
+  
   return (
     <div className={styles.container}>
       <Menu handleClick={handleClick}/>
@@ -43,6 +44,7 @@ const Header = () => {
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
       >  
+    
              
         <span className={styles.hiddenButton} > </span>            
 
