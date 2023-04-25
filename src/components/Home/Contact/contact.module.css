@@ -1,10 +1,9 @@
 .container {
-    margin-top: 5rem;
-    width: 1013px;
+    margin-top: 2rem;
+    width: 80%;
     height: 302px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
     /* background-color: aqua;     */
 }
 
@@ -12,5 +11,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* background-color: blue; */
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem;
+}
+
+@media(max-width: 750px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    
+    .contact{
+        margin: 2rem 0;
+    }
+}
+
+@media(max-width: 950px){
+    .container {
+        /* width: 860px; */
+    }
+
 }
