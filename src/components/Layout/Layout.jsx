@@ -1,7 +1,8 @@
 // import React from "react";
 import { Footer } from "../Footer/Footer";
-import Navbar from "../Home/Navbar/Navbar";
+
 import Head from "next/head";
+import Header from "../Header/Header";
 
 const Layout = ({ title, description, children }) => {
   
@@ -16,7 +17,7 @@ const Layout = ({ title, description, children }) => {
         </title>
         <meta name="description" content={description} />
       </Head>
-      <Navbar />
+      <Header />
       <main>{children}</main>
       <Footer />
     </div>
