@@ -4,7 +4,6 @@ import Navbar from "../Home/Navbar/Navbar";
 import Head from "next/head";
 
 const Layout = ({ title, description, children }) => {
-  console.log(children);
   //capturo una propiedad de children en donde figura el nombre de la page
   const section = children.type.name;
  
