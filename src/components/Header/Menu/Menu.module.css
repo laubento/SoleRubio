@@ -1,0 +1,30 @@
+.menuWrapper {
+    display: none;
+  }
+
+    .menuWrapper button{
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuWrapper span{
+    width: 25px;
+    height: 3px;
+    margin: 2px;
+    background: var(--main-color);
+    border: var(--main-color);
+  }
+  
+  @media (max-width: 550px) { 
+    .menuWrapper {
+      display: initial;
+    }
+  }
+  

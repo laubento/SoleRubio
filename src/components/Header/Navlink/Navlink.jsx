@@ -1,8 +1,10 @@
-//componente de navegación para dar estilo a los links activos
-
+/**** componente de navegación para dar estilo a los links activos *****/
+//next
 import Link from "next/link";
 import { useRouter } from "next/router";
+//react
 import { useEffect, useState } from "react";
+//styles
 import styles from './NavLink.module.css'
 
 const NavLink = ({ href, children }) => {
