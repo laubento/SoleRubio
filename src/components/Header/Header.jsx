@@ -7,7 +7,7 @@ import { useState } from "react";
 //images
 import logo from "../../../public/solerubioLogo.png";
 //components
-import NavLink from "./Navlink/Navlink";
+import NavLink from './Navlink/Navlink';
 import Menu from './Menu/Menu'
 //styles
 import styles from "./Header.module.css";
