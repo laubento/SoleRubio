@@ -18,7 +18,7 @@
     width: 90%;
 }
 .text h1{
-    font-family: --font-secondary;
+    font-family: var(--font-secondary);
     font-size: 5vw;
 }
 .text p{
