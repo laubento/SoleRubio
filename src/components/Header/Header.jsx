@@ -28,7 +28,9 @@ const Header = () => {
 
   return (
     <div className={styles.container}>
+   {/* <div> */}
       <Menu handleClick={handleClick}/>
+    
       <Link href="/" style={{ border: "none" }}>
         <Image
           src={logo}
@@ -39,11 +41,10 @@ const Header = () => {
           className={styles.logo}
         />
       </Link>
-
+      {/* </div> */}
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
-      >  
-             
+      >               
         <span className={styles.hiddenButton} > </span>            
 
         <NavLink href="/" children="INICIO" />
