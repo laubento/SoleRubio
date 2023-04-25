@@ -22,7 +22,7 @@ export default function Campaigns() {
     <div>
       <h1>Campañas</h1>
       {currentCampaigns?.map((el) => (
-        <div>el.image</div>   
+        <div key={el}>el.image</div>   
       ))}
 
       <Pagination

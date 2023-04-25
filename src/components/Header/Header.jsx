@@ -46,11 +46,11 @@ const Header = () => {
              
         <span className={styles.hiddenButton} > </span>            
 
-        <NavLink href="/" children="INICIO" />
-        <NavLink href="/campaigns" children="CAMPAÑAS" />
-        <NavLink href="/backstage" children="BACKSTAGE" />
-        <NavLink href="/press" children="PRESS" />
-        <NavLink href="/press" children="CONTACT" />
+        <NavLink href="/" children={"INICIO"} />
+        <NavLink href="/campaigns" children={"CAMPAÑAS"} />
+        <NavLink href="/backstage" children={"BACKSTAGE"} />
+        <NavLink href="/press" children={"PRESS"} />
+        <NavLink href="/press" children={"CONTACT"} />
       </div>        
     </div>
   );
