@@ -53,7 +53,7 @@
       border-radius: 2em;
       box-shadow: 5px 5px 15px #a2a2a2, -5px -5px 15px #ffffff;
       padding-top: 1rem;
-      height: 15rem;
+      height: 12rem;
       width: 80%;
       position: absolute;
       left: 3rem;
@@ -71,7 +71,7 @@
     }
   
     .container a {
-      height: 1.2rem;
+      height: 2rem;
       border: none;
     }
   
