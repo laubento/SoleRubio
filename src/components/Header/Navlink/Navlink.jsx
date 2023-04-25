@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 //react
 import { useEffect, useState } from "react";
 //styles
-import styles from './NavLink.module.css'
+import styles from './Navlink.module.css'
 
 const Navlink = ({ href, children }) => {
   const [ariaCurrent, setAriaCurrent] = useState();
