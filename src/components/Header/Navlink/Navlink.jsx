@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 //styles
 import styles from './NavLink.module.css'
 
-const NavLink = ({ href, children }) => {
+const Navlink = ({ href, children }) => {
   const [ariaCurrent, setAriaCurrent] = useState();
 
   //uso el hook para extraer la ruta que se muestra en el browser
@@ -30,4 +30,4 @@ const NavLink = ({ href, children }) => {
   );
 };
 
-export default NavLink;
+export default Navlink;
