@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* width: 30rem; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px var(--main-color);
+    width: 100%;
+}
+
+.input:focus {
+    outline-style: none;
+    font-family: var(--font-secondary);
+    color: var(--main-color);
+
+}
+
+.inputMessage {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 0.5px var(--main-color);
+    
+    /* background-color: var(--main-color); */
+}
+
+.message {
+    
+    display: flex;
+}
+
+.label {
+    /* font-size: smaller; */
+    padding-top: 0.3rem;
+    letter-spacing: 0.1em;
+    align-self: flex-start;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.button {
+    padding: 0.5em;
+    font-size: smaller;
+    letter-spacing: 0.1em;
+    font-family: var(--font-primary);
+    color: var(--main-color);
+    /* display: inline; */
+    background-color: transparent;
+    border: solid .5px;
+    border-bottom: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}

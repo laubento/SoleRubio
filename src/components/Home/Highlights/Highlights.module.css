@@ -1,0 +1,223 @@
+.container-main{
+    padding: 10px;
+    width: 1154px;
+    height: 1079px;
+}
+.titulo{
+    font-size: 54px;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+}
+.container-highlights{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 50px;
+}
+.container{
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+}
+.container:hover > .hover{
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.container:hover > .img-config{
+    animation-name: hoverTwo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hover{
+    100% {
+        transform: translate(-50%, 40%);
+        background-color: rgba(255, 255, 255, 0.916);
+    };
+}
+@keyframes hoverTwo{
+    100%{
+        opacity: 0.5;
+    }
+}
+.hover{
+    background-color: rgba(255, 255, 255, 0.792);
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+.hover h5{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0;
+}
+.hover h2{
+    color: black;
+}
+.container p{
+    position: absolute;
+    display: none;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    margin: 0;
+    /* padding: 10px 0px 10px 10px; */
+    background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.5));
+}
+
+ .container:nth-child(1){
+    grid-row: 1/5;
+}
+.container:nth-child(2){
+    grid-row: 1/4;
+}
+.container:nth-child(3){
+    grid-row: 5/7;
+}
+.container:nth-child(4){
+    grid-row: 4/7;
+}
+
+.img-config{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+    box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+}
+.link{
+    margin: 20px;
+    color:  #6F6D6D;
+    text-decoration: none;
+}
+.link h3{
+    font-weight: 100;   
+}
+.link:hover{
+    color:  #313131;
+    transition: all 0.5s;
+}
+
+@media(max-width: 1200px){
+    .container-main{
+        width: 980px;
+        height: 917px;
+    }
+    .hover{
+        height: 170px;
+    }
+    .hover h5{
+        font-size: 29px;
+    }
+}
+@media(max-width: 1050px){
+    .titulo{
+        font-size: 48px;
+    }
+    .container-main{
+        width: 97%;
+    }
+    .container-highlights{
+        grid-gap: 20px;
+    }
+    .hover{
+        height: 144px;
+    }
+    .hover h5{
+        font-size: 20px;
+    }
+}
+@media(max-width: 900px){
+    .container-main{
+        height: 740px;
+    }
+    .container-highlights{
+        grid-gap: 15px;
+    }
+    .hover{
+        height: 136px;
+    }
+    .hover h5{
+        font-size: 18px;
+    }
+}
+@media(max-width: 750px){
+    .titulo{
+        font-size: 44px;
+    }
+    .container-main{
+        height: 629px;
+    }
+    .container-highlights{
+        grid-gap: 13px;
+    }
+    .hover{
+        height: 122px;
+    }
+    .hover h5{
+        font-size: 16px;
+    }
+}
+@media(max-width: 650px){
+    .container-main{
+        height: 566px;
+    }
+    .hover{
+        height: 110px;
+    }
+    .hover h5{
+        font-size: 14px;
+    }
+}
+@media(max-width: 550px){
+    .titulo{
+        font-size: 40px;
+    }
+    .hover{
+        height: 99px;
+    }
+    .hover h5{
+        font-size: 13px;
+    }
+}
+@media(max-width: 450px){
+    .titulo{
+        font-size: 38px;
+    }
+    .container-main{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .container-highlights{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        margin-bottom: 5px;
+    }
+}
+@media(max-width: 320px){
+    .titulo{
+        font-size: 30px;
+    }
+    /* .container-main{
+        width: 305px;
+    } */
+}
