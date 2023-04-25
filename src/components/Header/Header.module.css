@@ -36,13 +36,18 @@
     border-bottom: solid var(--main-background) 5px;
   }
   
-  .container ul {
-    display: inline-block;
-  }
-  
-  @media (max-width: 550px) {
+   @media (max-width: 550px) {
+
+    .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
     .logo {
-      position: absolute;
+      margin-top: 10px;
+      position: initial;
       width: 40%;
       min-width: 160px;
       left: 5rem;
@@ -51,12 +56,12 @@
     .navContainerOpen {
       background: var(--main-background);
       border-radius: 2em;
-      box-shadow: 5px 5px 15px #a2a2a2, -5px -5px 15px #ffffff;
+      box-shadow: 3px 3px 3px #393939, -5px -5px 10px #ffffff;
       padding-top: 1rem;
       height: 12rem;
       width: 80%;
       position: absolute;
-      left: 3rem;
+      top: 7rem;
       display: flex;
       flex-direction: column;
       z-index: 999
@@ -78,5 +83,6 @@
     .container button:active {
       border: none;
     }
+
   }
   

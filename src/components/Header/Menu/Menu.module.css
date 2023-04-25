@@ -3,8 +3,8 @@
   }
 
     .menuWrapper button{
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 1rem;
     border: 2px solid var(--secondary-color);
     border-radius: 0.8em;

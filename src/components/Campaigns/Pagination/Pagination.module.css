@@ -3,27 +3,34 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 0.5rem;
 }
 
 .btnActive{
-    background: red;
-    color:black;
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
+    background: var(--main--background);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom: none;
+
+    width: 2.5rem;
+    height: 1.5rem;
     cursor: pointer;
 }
 
 .btnPasive{
-    background: red;
-    color:black;
+    background: var(--main--background);
+    color: var(--main-color);
+    border: none;
+    border-bottom: 1px solid var(--main-color);
     width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
+    height: 1.5rem;
     opacity: 0.5;
     cursor: pointer;
 }
 
 .btn:hover{
-    color: white;
+    color: #c9c9c9;
+    transition: all 0.5s;
 }
