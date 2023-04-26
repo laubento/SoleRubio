@@ -15,7 +15,8 @@
   @media screen and (max-width: 550px) {
     .link a[aria-current ='page'] {
       color: var(--secondary-color);
-      border: none;    
+      border: none;   
+      height: 2rem; 
     }
 
   }

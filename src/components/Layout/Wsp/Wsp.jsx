@@ -1,16 +1,16 @@
 // import React from 'react'
 
 const Wsp = () => {
-    const handleClick = () =>{
-        console.log(Hello)
-    }
+
   return (
     <div>
-        <button onClick={handleClick}>
-            <i></i>
-        </button>
+<Link href='https://wa.me/5491132911607'>
+
+<i></i>
+</Link>
+   
     </div>
   )
-}
+  }
 
-export default Wsp
+export default Wsp;
