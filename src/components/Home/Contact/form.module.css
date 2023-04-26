@@ -1,9 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* width: 30rem; */
-    align-items: center;
+    width: 50%;
     justify-content: center;
+    /* align-items: flex-start; */
     /* background-color: blueviolet; */
 }
 

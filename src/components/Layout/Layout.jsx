@@ -12,7 +12,7 @@ const Layout = ({ title, description, children }) => {
     <div>
       <Head>
         <title>
-          {title}/{section}
+          {title}
         </title>
         <meta name="description" content={description} />
       </Head>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import style from "./budget.module.css";
+import style from "./form.module.css";
 //nombre , email, consulta
 //maximo de caracteres para la consulta?
 
-const Budget = () => {
+const Form = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -12,6 +12,14 @@ const Budget = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const emailRegex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (name === "") return alert("Ingresa tu nombre");
+    if (email === "") return alert("Ingresa tu mail");
+    else if (!emailRegex.test(email)) return alert("Mail inválido");
+    if (message === "") return alert("Ingresa tu mensaje");
 
     let data = {
       name,
@@ -26,16 +34,11 @@ const Budget = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Response received");
-      if (res.status === 200) {
-        console.log("Response succeeded!");
-        setSubmitted(true);
-        setName("");
-        setEmail("");
-        setBody("");
-      }
     });
+
+    setEmail("");
+    setName("");
+    setMessage("");
   };
 
   return (
@@ -96,4 +99,4 @@ const Budget = () => {
   );
 };
 
-export default Budget;
+export default Form;

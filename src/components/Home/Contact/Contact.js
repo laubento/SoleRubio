@@ -1,5 +1,5 @@
 import React from "react";
-import Budget from "./Budget";
+import Budget from "./Form";
 import style from "./contact.module.css";
 import Link from "next/link";
 import { CiMail, CiFacebook, CiInstagram } from "react-icons/ci";

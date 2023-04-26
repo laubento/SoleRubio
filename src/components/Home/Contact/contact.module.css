@@ -3,7 +3,7 @@
     width: 80%;
     height: 302px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     /* background-color: aqua;     */
 }
 
@@ -38,9 +38,9 @@
     }
 }
 
-@media(max-width: 950px){
+/* @media(max-width: 950px){
     .container {
-        /* width: 860px; */
+        width: 860px;
     }
 
-}
+} */
