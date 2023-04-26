@@ -2,6 +2,7 @@ require("dotenv").config();
 const PASSWORD = process.env.password;
 const ACCOUNT = process.env.account;
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (req, res) {
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({

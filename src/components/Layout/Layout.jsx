@@ -1,10 +1,11 @@
 // import React from "react";
 import { Footer } from "../Footer/Footer";
-import Navbar from "../Home/Navbar/Navbar";
+
 import Head from "next/head";
+import Header from "../Header/Header";
 
 const Layout = ({ title, description, children }) => {
-  console.log(children);
+
   //capturo una propiedad de children en donde figura el nombre de la page
   const section = children.type.name;
  
@@ -16,8 +17,8 @@ const Layout = ({ title, description, children }) => {
         </title>
         <meta name="description" content={description} />
       </Head>
-      <Navbar />
-      <main className="container">{children}</main>
+      <Header />
+      <main>{children}</main>      
       <Footer />
     </div>
   );

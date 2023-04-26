@@ -1,0 +1,21 @@
+
+.link a[aria-current ='page'] {
+    border: 1px solid var(--secondary-color);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom: none;
+    color: var(--secondary-color)
+  }
+
+  .link a:hover{
+    color: #c9c9c9;
+    transition: all 0.5s;
+  }
+
+  @media screen and (max-width: 550px) {
+    .link a[aria-current ='page'] {
+      color: var(--secondary-color);
+      border: none;    
+    }
+
+  }
