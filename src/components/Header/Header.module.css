@@ -5,17 +5,18 @@
   margin-bottom: 2rem;
 }
 
-.logo, .openlogo {
+.logo,
+.openLogo{
   position: absolute;
   top: 4rem;
   left: 3rem;
-  width: 20%;
+
   height: auto;
 }
 
-/* .openLogo{
+.openLogo{
   left: 5rem;
-} */
+}
 
 .navContainerClosed,
 .navContainerOpen {
@@ -54,18 +55,23 @@
   }
 
   .logo {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     position: initial;
-    width: 40%;
+    /* width: 200px; */
     min-width: 160px;
-    /* left: 5rem; */
+    margin-left: 4rem;
   }
 
   .openLogo {
     position: fixed;
-    z-index: 200;
-    margin-left: 79.25%;
-    top: 4rem;
+    z-index: 209;
+    /* width: 10px; */
+    /* left: 81.25%; */
+    /* top: 4rem; */
+    /* left: 3rem; */
+    width: 40%;
+    height: auto;
+
   }
 
   .navContainerOpen {
@@ -82,6 +88,9 @@
     display: flex;
     flex-direction: column;
     z-index: 80;
+
+    -webkit-transform-origin-x: -10%;
+    -moz-transform-origin-x: -10%;
   }
 
   .navContainerClosed {
