@@ -44,6 +44,7 @@
 
 @media (max-width: 550px) {
   .container {
+    /* background: red; */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -52,6 +53,12 @@
     height: 2rem;
     margin-top: 2rem;
     padding-left: 1rem;
+    /* transform: translate(80%); */
+    /* z-index: 500; */
+    /* -webkit-transform: translate(50px); */
+    /* -moz-transform: ;
+    -o-transform: ;
+    transform: ; */
   }
 
   .logo {
@@ -71,11 +78,11 @@
     /* left: 3rem; */
     width: 40%;
     height: auto;
-
   }
 
   .navContainerOpen {
     background: var(--main-background);
+    
     border-radius: 1em;
     box-shadow: 3px 3px 3px #393939, -5px -5px 10px #ffffff;
     /* padding-top: 1rem; */

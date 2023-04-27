@@ -3,6 +3,7 @@ import { Footer } from "../Footer/Footer";
 
 import Head from "next/head";
 import Header from "../Header/Header";
+import Wsp from "./Wsp/Wsp";
 
 const Layout = ({ title, description, children }) => {
 
@@ -18,7 +19,8 @@ const Layout = ({ title, description, children }) => {
         <meta name="description" content={description} />
       </Head>
       <Header />
-      <main>{children}</main>      
+      <main>{children}</main>   
+      <Wsp />   
       <Footer />
     </div>
   );
