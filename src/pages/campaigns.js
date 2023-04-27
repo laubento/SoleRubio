@@ -37,7 +37,7 @@ export default function Campaigns() {
   //   </div>
   // );
 
-  let pepe = ['hola']
+  let pepe = ['hola','pipol']
   return(
     <div className={style["container-main"]}>
         <div className={style["container-campaigns"]}>

@@ -5,4 +5,7 @@
 }
 .container-campaigns{
     width: 60%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: antiquewhite;
 }

@@ -1,0 +1,14 @@
+
+
+.container-campaigns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(240, 168, 74);
+    justify-items: center;
+}
+.img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: 10px 0px;
+}
