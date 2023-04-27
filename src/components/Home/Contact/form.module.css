@@ -1,10 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* width: 30rem; */
-    align-items: center;
+    width: 60%;
     justify-content: center;
-    /* background-color: blueviolet; */
+    justify-self: center;
 }
 
 .input {
@@ -24,9 +23,14 @@
 .inputMessage {
     background-color: transparent;
     border: none;
-    border-bottom: solid 0.5px var(--main-color);
-    
+    border-bottom: solid 0.5px var(--main-color);    
     /* background-color: var(--main-color); */
+}
+
+.inputMessage:focus {
+    outline-style: none;
+    font-family: var(--font-secondary);
+    color: var(--main-color);
 }
 
 .message {
@@ -62,4 +66,12 @@
 
 .button:hover {
     cursor: pointer;
+}
+
+.button:disabled{
+    background-color: gray;
+}
+
+.button:disabled:hover {
+    cursor: default;
 }
