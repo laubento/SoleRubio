@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div className={styles.container}>
    {/* <div> */}
-      <Menu handleClick={handleClick}/>
+      <Menu handleClick={handleClick} open={open}/>
     
       <Link href="/" style={{ border: "none" }}>
         <Image
@@ -39,16 +39,15 @@ const Header = () => {
           width="auto"
           height={50}
           responsive="true"
-          className={styles.logo}
+          className={open ? styles.openLogo : styles.logo}
         />
       </Link>
       {/* </div> */}
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
-      >  
-                 
-        <span className={styles.hiddenButton} > </span>            
+      >              
 
+        <span className={styles.hiddenButton} > </span>            
         <NavLink href="/" children={"INICIO"} />
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />

@@ -1,16 +1,18 @@
 // import React from 'react'
+import Link from "next/link";
+import wtsp from "../../../../public/icons8-whatsapp.svg";
+import Image from "next/image";
 
 const Wsp = () => {
-    const handleClick = () =>{
-        console.log(Hello)
-    }
   return (
     <div>
-        <button onClick={handleClick}>
-            <i></i>
-        </button>
+      <Link href="https://wa.me/5491132911607">
+        <Image
+        src={wtsp}
+         />
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Wsp
+export default Wsp;
