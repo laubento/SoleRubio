@@ -9,6 +9,7 @@ const Wsp = () => {
       <Link href="https://wa.me/5491132911607">
         <Image
         src={wtsp}
+        style={{position: 'fixed', bottom: '2rem', right: '2rem', opacity: '0.8'}}
          />
       </Link>
     </div>
