@@ -45,9 +45,8 @@ const Header = () => {
       {/* </div> */}
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
-      >  
-    
-             
+      >              
+
         <span className={styles.hiddenButton} > </span>            
         <NavLink href="/" children={"INICIO"} />
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
