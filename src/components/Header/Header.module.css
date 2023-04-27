@@ -4,7 +4,7 @@
     margin-bottom: 2rem;
   }
   
-  .logo {
+  .logo, .openlogo{
     position: absolute;
     top: 4rem;
     left: 3rem;
@@ -41,30 +41,42 @@
     .container{
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
+      gap: 0.3rem;
+      height: 2rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
     }
 
     .logo {
-      margin-top: 10px;
+      margin-left: 2.5rem;
       position: initial;
       width: 40%;
       min-width: 160px;
-      left: 5rem;
+      /* left: 5rem; */
+    }
+
+    .openLogo{
+      position: absolute;
+      z-index: 200;
+      margin-left: 79.25%;
+      top: 4rem;
     }
   
     .navContainerOpen {
       background: var(--main-background);
-      border-radius: 2em;
+      border-radius: 1em;
       box-shadow: 3px 3px 3px #393939, -5px -5px 10px #ffffff;
-      padding-top: 1rem;
-      height: 12rem;
+      /* padding-top: 1rem; */
+      /* height: 12rem; */
+      /* padding: 0.5rem; */
       width: 80%;
       position: absolute;
-      top: 7rem;
+      /* top: 7rem; */
       display: flex;
       flex-direction: column;
-      z-index: 999
+      z-index: 80
     }
   
     .navContainerClosed {
@@ -76,7 +88,7 @@
     }
   
     .container a {
-      height: 2rem;
+      height: 50px;
       border: none;
     }
   

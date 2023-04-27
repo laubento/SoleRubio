@@ -1,14 +1,15 @@
 import styles from "./Menu.module.css";
 
-const Menu = ({ handleClick }) => {
+const Menu = ({ handleClick, open }) => {
   return (
     <div>
       <nav className={styles.menuWrapper}>
 
           <button onClick={handleClick}>
-            <span></span>
-            <span></span>
-            <span></span>
+   
+            <span className={open ? styles.closingTag : styles.menuTag}></span>
+            <span className={open? styles.menuWrapper : styles.menuTag}></span>
+            <span className={open? styles.menuWrapper : styles.menuTag}></span>
 
             {/* <svg
               viewBox="0 0 100 80"
