@@ -2,70 +2,28 @@ import style from './ImageCampaigns.module.css'
 import Image from 'next/image'
 import test from '../../../images/pepe.png'
 import Link from 'next/link'
-export function ImageCampaigns() {
+export function ImageCampaigns({data}) {
 
 
 
     return (
         <div className={style["container-main"]}>
             <div className={style["container-campaigns"]}>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
+                {data.map((el, i) => {
+                    let separate = el.name.split(' ')
+                    let complete = separate.join('_')
+                    return(
+                        <Link key={el} href={'/campaigns/' + complete} className={style.Link}>
+                            <Image src={el.url} alt={el.name} className={style["img"]} width={300} height={300}/>
+                            <p>{el.name}</p>
+                        </Link>
+                    )
+                })}
 
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
-                <Link href={'/campaigns/name'}>
-                    <Image src={test} alt='test' className={style["img"]} />
-                    <p>Backtage</p>
-                </Link>
+               
+            
             </div>
         </div>
     )
 }
 
-    
-
-// export function ImageCampaigns({name}){
-
-//     return(
-//         <div className={style["container-main"]}>
-                // <div className={style["container-campaigns"]}>
-                //     <ul>
-                //         {name.map((id) => {
-                //             return (
-                //                 <li key={id}>{id}</li>
-                //             )
-                //         })}
-                //     </ul>
-                // </div>
-//         </div>
-//     )
-// }

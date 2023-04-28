@@ -2,52 +2,18 @@ import { NameCampaigns } from "@/components/Campaigns/NameCampaigns/NameCampaign
 import { ImageCampaigns } from "@/components/Campaigns/ImageCampaigns/ImageCampaings"
 import style from '../../styles/campaigns.module.css'
 import Pagination from "../../components/Campaigns/Pagination/Pagination";
-import { campaigns } from "../../utils";
 import { useState } from "react";
 import dotenv from 'dotenv';
 import { useRouter } from 'next/router';
 
 export default function Campaigns({data}) {
     const router = useRouter();
-    console.log(data)
-
-
-    // const [page, setPage] = useState(1);
-
-    // const [campaignsPerPage, setCampaignsPerPage] = useState(2);
-    // const indexLastCampaign = page * campaignsPerPage;
-    // const indexFirstCampaign = indexLastCampaign - campaignsPerPage;
-
-    // const currentCampaigns = campaigns?.slice(
-    //   indexFirstCampaign,
-    //   indexLastCampaign
-    // );
-
-    // const paging = (number) => {
-    //   setPage(number);
-    // };
-
-    // return (
-    //   <div>
-    //     <h1>Campañas</h1>
-    //     {currentCampaigns?.map((el) => (
-    //       <div>el.image</div>   
-    //     ))}
-
-    //     <Pagination
-    //       campaigns={campaigns.length}
-    //       campaignsPerPage={campaignsPerPage}
-    //       paging={paging}
-    //       page={page}
-    //     />
-    //   </div>
-    // );
-    let pepe = ['hola', 'pipol']
+    
     return (
         <div className={style["container-main"]}>
             <div className={style["container-campaigns"]}>
-                <NameCampaigns name={pepe} />
-                {/* <ImageCampaigns /> */}
+                <NameCampaigns data={data}/>
+                <ImageCampaigns data={data}/>
             </div>
         </div>
     )
@@ -67,7 +33,18 @@ export async function getStaticProps() {
         }
     })
         .then(response => response.json())
-        .then((data) => {return (info = data)})
+        .then((data) => {
+            let newInfo = []
+            let names = {}
+            data.resources.forEach(item => {
+                if(!names[item.folder]){
+                    let name = item.folder.split('/') 
+                    newInfo.push({name: name[1], url: item.url})
+                    names[item.folder] = true
+                }
+            })
+            return info = newInfo
+        })
         .catch(error => console.error(error))
 
     return {

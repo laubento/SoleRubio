@@ -12,3 +12,8 @@
     object-fit: cover;
     margin: 10px 0px;
 }
+.Link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

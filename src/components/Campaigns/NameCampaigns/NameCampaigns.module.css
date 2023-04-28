@@ -9,7 +9,7 @@
 .container-campaigns li{
     font-family: var(--font-primary);
     color: rgba(44, 44, 44, 0.945);
-    font-size: 16px;
+    font-size: 13px;
     margin: 15px 0px;
     font-weight: 600;
 }

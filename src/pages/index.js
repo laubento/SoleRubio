@@ -30,6 +30,8 @@ export default function Home() {
         <Highlights />
         <Extras props={"line"} />
       </div>
+
+      
       <div className={style["container-highlights"]}>
         <Contact />
       </div>

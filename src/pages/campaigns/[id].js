@@ -2,14 +2,18 @@
 import { useEffect } from "react"
 import dotenv from 'dotenv'
 import { data } from "autoprefixer";
+import Image from "next/image";
 
-export default function Campaign() {
+export default function Campaign({data}) {
 
-
-
+    console.log(data)
     return (
         <div>
-            hola
+            {data.map((el) => {
+                return(
+                    <Image key={el} src={el} alt={'Foto'}  width={300} height={300}/>
+                )
+            })}
         </div>
     )
 }
@@ -77,15 +81,12 @@ export async function getStaticProps({params}) {
         .then(response => response.json())
         .then((data) => {
             let dataActualice = data.resources.map((el) => {
-                // console.log(el.folder)
                 return el.folder === info && el.url     
             })
             dataActualice = dataActualice.filter(el => el !== false)
-            return (dataComplete = dataActualice)
+            return dataComplete = dataActualice
         })
         .catch(error => console.error(error))
-
-        console.log(dataComplete)
 
     return {
         props: {
