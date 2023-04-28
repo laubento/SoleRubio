@@ -1,7 +1,4 @@
 
-
-
-
 .container-campaigns ul{
     list-style: none;
     padding: 0;
@@ -12,4 +9,8 @@
     font-size: 13px;
     margin: 15px 0px;
     font-weight: 600;
+}
+.active{
+    color: blue;
+    background-color: blue;
 }
