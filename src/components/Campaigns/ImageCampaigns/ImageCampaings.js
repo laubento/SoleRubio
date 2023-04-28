@@ -4,6 +4,8 @@ import test from '../../../images/pepe.png'
 import Link from 'next/link'
 export function ImageCampaigns() {
 
+
+
     return (
         <div className={style["container-main"]}>
             <div className={style["container-campaigns"]}>
@@ -48,6 +50,8 @@ export function ImageCampaigns() {
         </div>
     )
 }
+
+    
 
 // export function ImageCampaigns({name}){
 
