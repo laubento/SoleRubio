@@ -1,10 +1,10 @@
 import style from './ImageCampaigns.module.css'
 import Image from 'next/image'
-import test from '../../../images/pepe.png'
 import Link from 'next/link'
+
+
+
 export function ImageCampaigns({data}) {
-
-
 
     return (
         <div className={style["container-main"]}>
@@ -14,14 +14,11 @@ export function ImageCampaigns({data}) {
                     let complete = separate.join('_')
                     return(
                         <Link key={el} href={'/campaigns/' + complete} className={style.Link}>
-                            <Image src={el.url} alt={el.name} className={style["img"]} width={300} height={300}/>
+                            <Image src={el.url} alt={el.name} className={style["img"]} width={220} height={220}/>
                             <p>{el.name}</p>
                         </Link>
                     )
                 })}
-
-               
-            
             </div>
         </div>
     )

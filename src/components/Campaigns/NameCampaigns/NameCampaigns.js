@@ -9,7 +9,6 @@ export function NameCampaigns({data}){
     if(data[0].name.split(' ').join('_') === urlActual[2]){
         state = true
     }
-    console.log(state)
     return(
         <div className={style["container-main"]}>
             <div className={style["container-campaigns"]}>
@@ -18,7 +17,7 @@ export function NameCampaigns({data}){
                         let separate = id.name.split(' ')
                         let complete = separate.join('_')
                         return(
-                            <li key={id} className={state && i === 0 ? style["active"] : null}><Link href={`/campaigns/` + complete}>{id.name}</Link></li>
+                            <li key={id} className={state && i === 0 ? style["active"] : null}><Link className={style.Link} href={`/campaigns/` + complete}>{id.name}</Link></li>
                         )
                     })}
                 </ul>

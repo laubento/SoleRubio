@@ -1,16 +1,48 @@
-
-.container-campaigns ul{
+.container-campaigns ul {
     list-style: none;
     padding: 0;
 }
-.container-campaigns li{
+
+.container-campaigns li {
     font-family: var(--font-primary);
     color: rgba(44, 44, 44, 0.945);
     font-size: 13px;
     margin: 15px 0px;
     font-weight: 600;
+    transition: all 0.5s;
 }
-.active{
+.Link:hover{
+    color: rgba(153, 152, 152, 0.945);
+}
+
+.active {
     color: blue;
     background-color: blue;
+}
+
+@media(min-width:2000px){
+    .container-campaigns li {
+        font-size: 19px;
+    }
+}
+@media(max-width: 850px) {
+    .container-campaigns li {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 600px) {
+    .container-campaigns li {
+        font-size: 10px;
+    }
+}
+@media(max-width: 500px) {
+    .container-campaigns li {
+        font-size: 9px;
+    }
+}
+@media(max-width: 450px) {
+    .container-main{
+        display: none;
+    }
 }

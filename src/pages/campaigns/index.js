@@ -8,12 +8,12 @@ import { useRouter } from 'next/router';
 
 export default function Campaigns({data}) {
     const router = useRouter();
-    
+    let pepe = data.concat(data).concat(data).concat(data)
     return (
         <div className={style["container-main"]}>
             <div className={style["container-campaigns"]}>
-                <NameCampaigns data={data}/>
-                <ImageCampaigns data={data}/>
+                <NameCampaigns data={pepe} className={style["desactive"]}/>
+                <ImageCampaigns data={pepe} />
             </div>
         </div>
     )
