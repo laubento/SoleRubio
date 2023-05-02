@@ -195,7 +195,7 @@ export async function getStaticProps({ params }) {
     })
         .then(response => response.json())
         .then((data) => {
-            let dataActualice = data.resources.map((el) => {
+            let dataActualice = data.resources?.map((el) => {
                 return el.folder === info && el.url
             })
             dataActualice = dataActualice.filter(el => el !== false)
