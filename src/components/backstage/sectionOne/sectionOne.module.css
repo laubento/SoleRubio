@@ -3,29 +3,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.background{
+.background {
   opacity: 0.5;
   margin: 3rem;
-  position: fixed;
-  top: 8rem;
-  right: 0px;
+  position: absolute;
+  width: 6rem;
+  height: auto;
+  top: 9rem;
+  right: 5rem;
+  z-index: -1;
+}
+
+.gridContainer{
+  /* background: red; */
+  width: 756px;
+  height: 1000px;
 }
 
 .grid {
-  width: 70%;
-  /* margin: 5rem; */
+  /* width: 60%; */
+  
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(24, 5rem);
+  grid-template-rows: repeat(24, 1fr);
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .title1 {
   grid-column: 12/16;
-  font-size: '1.2rem';
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -33,21 +42,21 @@
   transform: rotate(-90deg);
   grid-column: 8/11;
   grid-row: 10;
-  font-size: '1.2rem';
+  font-size: 1.2rem;
 }
 
 .title3 {
-  grid-column: 12/16;
-  font-size: '1.2rem';
+  grid-column: 1/7;
+  grid-row: 14/23;
+  font-size: 1.2rem;
   text-align: center;
-  font-size: '1.2rem';
 }
 
 .title4 {
   transform: rotate(-90deg);
   grid-column: 1/3;
   grid-row: 23;
-  font-size: '1.2rem';
+  font-size: 1.2rem;
 }
 
 .photo1 {
@@ -98,7 +107,7 @@
   border: 6px solid black;
 }
 
-.photo6{
+.photo6 {
   grid-column: 8/16;
   grid-row: 14/19;
   width: 100%;
@@ -107,7 +116,7 @@
   overflow: hidden;
 }
 
-.photo7{
+.photo7 {
   grid-column: 3/11;
   grid-row: 20/25;
   width: 100%;
@@ -116,7 +125,7 @@
   overflow: hidden;
 }
 
-.photo8{
+.photo8 {
   grid-column: 12/16;
   grid-row: 20/25;
   width: 100%;
@@ -139,14 +148,13 @@
   transition: ease-in-out;
 }
 
-
 @media (max-width: 550px) {
   .container {
     margin: 0;
     /* background: rgba(255, 0, 0, 0.119); */
   }
 
-  .background{ 
+  .background {
     position: fixed;
     left: 0px;
     /* right: 0px; */
@@ -160,8 +168,8 @@
     /* width: 100%; */
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    
+    flex-wrap: wrap;
+
     /* gap: 0.5rem; */
   }
 
@@ -170,31 +178,30 @@
     width: 90%;
     height: 20%;
   }
-  
+
   .photo2 {
     margin-right: 2rem;
     width: 80%;
     height: 20%;
   }
 
-  .photo3{
+  .photo3 {
     height: 20%;
     width: 100%;
     margin-left: 2rem;
   }
-  .photo4{
+  .photo4 {
     width: 90%;
     margin-left: 1rem;
     height: 20%;
   }
 
-  .title1{
+  .title1 {
     margin: 0 0 0 10rem;
   }
 
-  .title2{
-    margin:0;
+  .title2 {
+    margin: 0;
     transform: unset;
   }
-  
 }
