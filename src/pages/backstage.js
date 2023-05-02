@@ -1,7 +1,23 @@
-import react from "react";
+import Image from "next/image";
+import SectionOne from "@/components/backstage/sectionOne/sectionOne";
+import backgroundImg from "../../public/backstage.png";
 
-export default function Backstage(){
-    return(
-        <h1>Backstage</h1>
-    )
-}
+const Backstage = () => {
+  return (
+    <main 
+    // style={{ display: "flex", alignItems: "center", margin: '0 4rem 0 4rem'}}
+    >
+      {/* <div> */}
+        <SectionOne />
+      {/* </div> */}
+      {/* <Image
+        src={backgroundImg}
+        width={100}
+        height={"auto"}
+        style={{ opacity: "0.5", margin: "3rem" }}
+      /> */}
+    </main>
+  );
+};
+
+export default Backstage;
