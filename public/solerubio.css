@@ -1,3 +1,8 @@
 @charset "UTF-8";
 .fil1 {fill:#9C9B9C;fill-rule:nonzero}
 .fil0 {fill:#282929;fill-rule:nonzero}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
