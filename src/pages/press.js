@@ -1,10 +1,10 @@
-import Layout from "@/components/Layout/Layout";
+import PressComp from "../components/Press/PressComp";
+import style from "../styles/press.module.css";
 
-
-export default function Press(){
-    return (
-
-        <h1> Prensa</h1>
-    
-    )
+export default function Press() {
+  return (
+    <div className={style.containerPress}>
+      <PressComp />
+    </div>
+  );
 }
