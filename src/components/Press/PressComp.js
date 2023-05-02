@@ -9,6 +9,7 @@ import React from "react";
 const PressComp = () => {
   return (
     <div className={style["container-main"]}>
+      <h3 className={style.titles}>PRENSA</h3>
       <div className={style["img-container"]}>
         <Image src={img} className={style.images} alt="press" />
         <Image src={img2} className={style.images} alt="press" />

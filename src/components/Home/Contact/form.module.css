@@ -75,3 +75,15 @@
 .button:disabled:hover {
     cursor: default;
 }
+
+@media(max-width: 1050px){
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 750px){
+    .container {
+        width: 60%;
+    }
+}

@@ -48,10 +48,10 @@ export default function (req, res) {
     <h4>Sole! Recibiste una solicitud de contacto de ${req.body.name}</h4>
   </div>
   <div class="body">
-    <p class="titles">Su mail</p>
-    <p>${req.body.email}</p>
-    <p class="titles">Este es su mensaje</p>
-    <p>${req.body.message}</p>
+    <p>Su mail</p>
+    <p class="titles">${req.body.email}</p>
+    <p>Este es su mensaje</p>
+    <p class="titles">${req.body.message}</p>
   </div>
 </body>
 </html>
