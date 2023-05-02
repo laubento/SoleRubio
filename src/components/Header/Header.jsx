@@ -51,8 +51,8 @@ const Header = () => {
         <NavLink href="/" children={"INICIO"} />
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />
-        <NavLink href="/press" children={"PRESS"} />
-        <NavLink href="/press" children={"CONTACT"} />
+        <NavLink href="/press" children={"PRENSA"} />
+        <Link className={styles.contact} href="/#contact">CONTACTO</Link>
       </div>        
     </div>
   );

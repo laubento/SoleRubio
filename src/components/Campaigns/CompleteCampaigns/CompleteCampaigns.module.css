@@ -1,0 +1,21 @@
+.container-main{
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-campaigns{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: aqua;
+    margin: 10px 0px;
+}
+/* .container-campaigns{
+    display: flex;
+    grid-template-columns: 20% 80%;
+    background-color: aqua;
+    margin: 10px 0px;
+} */

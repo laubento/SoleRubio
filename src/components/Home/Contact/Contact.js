@@ -6,7 +6,7 @@ import { CiMail, CiFacebook, CiInstagram } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="contact">
       <Budget />
       <div className={style.contact}>
         <Link

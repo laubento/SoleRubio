@@ -30,6 +30,9 @@
 
 .titles {
     text-align: center;
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    color: var(--secondary-color);
 }
 
 .images:nth-child(1){
@@ -80,7 +83,17 @@
     transition-duration: 0.5s;
 }
 
+@media(max-width:1150px){
+    .titles{
+        font-size: 4rem;
+    }
+}
+
 @media(max-width: 900px){
+    .titles{
+        font-size: 3rem;
+    }
+
     .img-container{
         gap: 1rem;
         grid-template-areas: 
@@ -96,6 +109,10 @@
 }
 
 @media(max-width: 500px){
+    .titles{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
     .img-container{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(12, 1fr);
