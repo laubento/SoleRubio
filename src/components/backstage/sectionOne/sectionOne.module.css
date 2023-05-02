@@ -36,6 +36,8 @@
   grid-column: 8/11;
   grid-row: 10;
   font-size: 120%;
+  transition-duration: 0.5s;
+  transition: ease-in-out;
 }
 
 .title3 {
@@ -58,7 +60,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
 }
 
 .photo2 {
@@ -67,8 +69,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 6px solid black;
+  transition-duration: 0.5s;
 }
 
 .photo3 {
@@ -77,7 +80,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
 }
 
 .photo4 {
@@ -86,7 +89,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
+
 }
 
 .photo5 {
@@ -95,7 +99,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
   z-index: 10;
   border: 6px solid black;
 }
@@ -106,7 +110,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
+
 }
 
 .photo7 {
@@ -115,7 +120,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
+
 }
 
 .photo8 {
@@ -124,22 +130,38 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  transition-duration: 0.5s;
 }
+
 .photo1:hover,
 .photo2:hover,
 .photo3:hover,
-.photo4:hover {
-  object-fit: unset;
-  width: 30vw;
-  height: auto;
+.photo4:hover,
+.photo5:hover,
+.photo6:hover,
+.photo7:hover,
+.photo8:hover {
+  object-fit:unset;
+  width: auto;
+  height: 30rem;
   z-index: 30;
-  position: unset;
+  /* position: unset; */
   border-radius: 2em;
   border: 2px solid white;
-  transition: 20s;
-  transition: ease-in-out;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transfrom: scale(1.1);
+  transition-duration: 0.5s;   
 }
+
+.photo7:hover,
+.photo8:hover {
+ 
+  position: absolute;
+  bottom: 1rem;
+}
+
 
 @media(min-height: 1112px) {
   .grid{
