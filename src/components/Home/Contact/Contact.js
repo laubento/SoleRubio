@@ -17,7 +17,11 @@ const Contact = () => {
           <CiInstagram className={style.logo} />
           <span>/solerubio</span>
         </Link>
-        <Link className={style.social} href="" target="_blank">
+        <Link
+          className={style.social}
+          href="mailto:msolerubio@gmail.com"
+          target="_blank"
+        >
           <CiMail className={style.logo} />
           <span>msolerubio@gmail.com</span>
         </Link>

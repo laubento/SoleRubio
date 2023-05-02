@@ -21,6 +21,7 @@ body {
   font-size: 0.8rem;
 }
 
+
 a {
   color: var(--main-color); 
   font-family: var(--font-primary);   
@@ -29,4 +30,8 @@ a {
 
 a:hover{
   color: currentColor;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 910699bf51e4bc7302ac3da6c1242773eca459a6
