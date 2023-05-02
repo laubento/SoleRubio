@@ -1,34 +1,41 @@
 .container {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 0;
 }
 
 .background{
-  /* width: 100px; */
-  /* height: auto; */
   opacity: 0.5;
   margin: 3rem;
-  /* position: fixed; */
+  position: fixed;
+  top: 8rem;
+  right: 0px;
 }
 
 .grid {
-  margin: 5rem;
+  width: 70%;
+  /* margin: 5rem; */
   display: grid;
-  /* height: 700px; */
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(12, 5rem);
+  grid-template-rows: repeat(24, 5rem);
+  position: relative;
 }
 
 .title1 {
-  grid-column: 12/17;
+  grid-column: 12/16;
 }
 
 .title2 {
   transform: rotate(-90deg);
-  grid-column: 10/11;
+  grid-column: 11;
   grid-row: 8/13;
+}
+
+.title4 {
+  transform: rotate(-90deg);
+  grid-column: 11;
+  grid-row: 20;
 }
 
 .photo1 {
@@ -39,27 +46,19 @@
   object-fit: cover;
   overflow: hidden;
 }
-.photo1:hover,
-.photo2:hover,
-.photo3:hover,
-.photo4:hover {
-  object-fit: unset;
-  width: 30vw;
-  height: auto;
-  z-index: 30;
-  position: absolute;
-}
+
 .photo2 {
-  grid-column: 8/17;
+  grid-column: 9/16;
   grid-row: 2/7;
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  border: 6px solid black;
 }
 
 .photo3 {
-  grid-column: 2/7;
+  grid-column: 2/8;
   grid-row: 7/13;
   width: 100%;
   height: 100%;
@@ -68,7 +67,7 @@
 }
 
 .photo4 {
-  grid-column: 9/16;
+  grid-column: 10/16;
   grid-row: 8/13;
   width: 100%;
   height: 100%;
@@ -76,6 +75,43 @@
   overflow: hidden;
 }
 
+.photo5 {
+  grid-column: 1/7;
+  grid-row: 15/21;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 10;
+  border: 6px solid black;
+}
+
+.photo6{
+  grid-column: 8/16;
+  grid-row: 14/19;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.photo7{
+  grid-column: 3/11;
+  grid-row: 20/25;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.photo8{
+  grid-column: 12/16;
+  grid-row: 20/25;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
 .photo1:hover,
 .photo2:hover,
 .photo3:hover,
@@ -89,14 +125,13 @@
   border: 2px solid white;
   transition: 20s;
   transition: ease-in-out;
-  /* position: absolute; */
-  /* top: 50%;
-    left: 50%;         */
 }
+
 
 @media (max-width: 550px) {
   .container {
-    background: rgba(255, 0, 0, 0.119);
+    margin: 0;
+    /* background: rgba(255, 0, 0, 0.119); */
   }
 
   .background{ 

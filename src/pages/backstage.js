@@ -5,7 +5,7 @@ import backgroundImg from "../../public/backstage.png";
 const Backstage = () => {
   return (
     <main 
-    style={{ display: "flex", alignItems: "center" }}
+    // style={{ display: "flex", alignItems: "center", margin: '0 4rem 0 4rem'}}
     >
       {/* <div> */}
         <SectionOne />
