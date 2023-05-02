@@ -1,0 +1,15 @@
+.logo {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    opacity: 0.8;
+}
+
+@media (max-width:500px){
+    .logo {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* style={{position: 'fixed', bottom: '2rem', right: '2rem', opacity: '0.8'}} */

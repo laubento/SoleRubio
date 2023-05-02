@@ -28,11 +28,11 @@ const Header = () => {
   }
   
   return (
-    <div className={styles.container}>
-   {/* <div> */}
+    <main className={styles.container}>
+      <div className={styles.navbar}>
       <Menu handleClick={handleClick} open={open}/>
     
-      <Link href="/" style={{ border: "none" }}>
+      <Link href="/" style={{ position: 'absolute' }}>
         <Image
           src={logo}
           alt="logo soleRubio"
@@ -41,20 +41,20 @@ const Header = () => {
           responsive="true"
           className={open ? styles.openLogo : styles.logo}
         />
+        
       </Link>
-      {/* </div> */}
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
       >              
-
         <span className={styles.hiddenButton} > </span>            
         <NavLink href="/" children={"INICIO"} />
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />
-        <NavLink href="/press" children={"PRESS"} />
-        <NavLink href="/press" children={"CONTACT"} />
-      </div>        
-    </div>
+        <NavLink href="/press" children={"PRENSA"} />
+        <Link className={styles.contact} href="/#contact">CONTACTO</Link>
+      </div> 
+      </div>       
+    </main>
   );
 };
 

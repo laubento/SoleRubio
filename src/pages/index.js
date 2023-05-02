@@ -1,4 +1,4 @@
-import Budget from "@/components/Home/Contact/Budget";
+import Budget from "@/components/Home/Contact/Form";
 import Contact from "@/components/Home/Contact/Contact";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -30,11 +30,9 @@ export default function Home() {
         <Highlights />
         <Extras props={"line"} />
       </div>
-      <div className={style["container-highlights"]}>
+      <div className={style["container-contact"]}>
         <Contact />
       </div>
-
-
     </main>
   );
 }

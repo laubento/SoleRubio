@@ -1,10 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* width: 30rem; */
-    align-items: center;
+    width: 60%;
     justify-content: center;
-    /* background-color: blueviolet; */
+    justify-self: center;
 }
 
 .input {
@@ -24,9 +23,14 @@
 .inputMessage {
     background-color: transparent;
     border: none;
-    border-bottom: solid 0.5px var(--main-color);
-    
+    border-bottom: solid 0.5px var(--main-color);    
     /* background-color: var(--main-color); */
+}
+
+.inputMessage:focus {
+    outline-style: none;
+    font-family: var(--font-secondary);
+    color: var(--main-color);
 }
 
 .message {
@@ -49,7 +53,7 @@
 }
 
 .button {
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
     font-size: smaller;
     letter-spacing: 0.1em;
     font-family: var(--font-primary);
@@ -58,8 +62,30 @@
     background-color: transparent;
     border: solid .5px;
     border-bottom: none;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .button:hover {
     cursor: pointer;
+}
+
+.button:disabled{
+    opacity: 0.6;
+}
+
+.button:disabled:hover {
+    cursor: default;
+}
+
+@media(max-width: 1050px){
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 750px){
+    .container {
+        width: 60%;
+    }
 }

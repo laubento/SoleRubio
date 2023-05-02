@@ -1,7 +1,13 @@
-import react from "react";
+import Image from "next/image";
+import SectionOne from "@/components/backstage/sectionOne/sectionOne";
+import backgroundImg from "../../public/backstage.png";
 
-export default function Backstage(){
-    return(
-        <h1>Backstage</h1>
-    )
-}
+const Backstage = () => {
+  return (
+    <main>
+      <SectionOne />
+    </main>
+  );
+};
+
+export default Backstage;

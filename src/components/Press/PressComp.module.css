@@ -1,0 +1,144 @@
+.container-main{
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "area1 area1 area1 area2 area2 area3 area3 area3"
+    "area1 area1 area1 area2 area2 area3 area3 area3"
+    "area4 area4 area5 area5 area6 area6 area7 area7"
+    "area4 area4 area5 area5 area6 area6 area7 area7"
+    "area4 area4 area8 area8 area8 area8 area7 area7"
+    "area9 area9 area8 area8 area8 area8 . ."
+    "area9 area9 area8 area8 area8 area8 area10 area10"
+    "area9 area9 area8 area8 area8 area8 area10 area10";
+}
+
+.images {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.5s;
+    /* height: 600px; */
+}
+
+.titles {
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+
+.images:nth-child(1){
+    grid-area: area1;
+}
+
+.images:nth-child(2){
+    grid-area: area2;
+}
+
+.images:nth-child(3){
+    grid-area: area3;
+    border-radius: 50%;
+}
+
+.images:nth-child(4){
+    grid-area: area4;
+}
+
+.images:nth-child(5){
+    grid-area: area5;
+    height: 80%;
+}
+
+.images:nth-child(6){
+    grid-area: area6;
+}
+
+.images:nth-child(7){
+    grid-area: area7;
+}
+
+.images:nth-child(8){
+    grid-area: area8;
+}
+
+.images:nth-child(9){
+    grid-area: area9;
+}
+
+.images:nth-child(10){
+    grid-area: area10;
+}
+
+.images:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition-duration: 0.5s;
+}
+
+@media(max-width:1150px){
+    .titles{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 900px){
+    .titles{
+        font-size: 3rem;
+    }
+
+    .img-container{
+        gap: 1rem;
+        grid-template-areas: 
+            "area1 area1 area1 area1 area2 area2 area2 area2"
+            "area1 area1 area1 area1 area2 area2 area2 area2"
+            "area3 area3 area3 area3 area4 area4 area5 area5"
+            "area3 area3 area3 area3 area4 area4 area5 area5"
+            "area6 area6 area6 area6 area7 area7 area7 area7"
+            "area6 area6 area6 area6 area7 area7 area7 area7"
+            "area8 area8 . area9 area9 . area10 area10"
+            "area8 area8 . area9 area9 . area10 area10"
+    }
+}
+
+@media(max-width: 500px){
+    .titles{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+    .img-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: 
+            "area1 area1 area1 area1"
+            "area1 area1 area1 area1"
+            "area2 area2 area5 area5"
+            "area2 area2 area5 area5"
+            "area2 area2 area4 area4"
+            "area2 area2 area4 area4"
+            "area3 area3 area3 area3"
+            "area3 area3 area3 area3"
+            "area6 area6 area7 area7"
+            "area6 area6 area7 area7"
+            "area8 area8 area9 area9"
+            "area8 area8 area10 area10"            
+    }
+
+    .images:nth-child(6){
+        height: 80%;
+    }
+}
+
+
+
+
+
+
+    

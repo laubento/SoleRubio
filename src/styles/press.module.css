@@ -1,0 +1,9 @@
+.containerPress {
+    margin: 0% 10% 5% 10%;
+}
+
+@media(max-width: 1050px){
+    .containerPress{
+        margin: 0% 5% 5% 5%;
+    }    
+}

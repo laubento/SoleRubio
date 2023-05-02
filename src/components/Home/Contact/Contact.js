@@ -1,12 +1,12 @@
 import React from "react";
-import Budget from "./Budget";
+import Budget from "./Form";
 import style from "./contact.module.css";
 import Link from "next/link";
 import { CiMail, CiFacebook, CiInstagram } from "react-icons/ci";
 
 const Contact = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="contact">
       <Budget />
       <div className={style.contact}>
         <Link
@@ -17,7 +17,11 @@ const Contact = () => {
           <CiInstagram className={style.logo} />
           <span>/solerubio</span>
         </Link>
-        <Link className={style.social} href="" target="_blank">
+        <Link
+          className={style.social}
+          href="mailto:msolerubio@gmail.com"
+          target="_blank"
+        >
           <CiMail className={style.logo} />
           <span>msolerubio@gmail.com</span>
         </Link>
