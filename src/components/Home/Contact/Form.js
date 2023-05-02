@@ -42,6 +42,8 @@ const Form = () => {
       body: JSON.stringify(data),
     });
 
+    alert("Tu mensaje fue enviado con éxito");
+
     setEmail("");
     setName("");
     setMessage("");

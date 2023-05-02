@@ -25,17 +25,21 @@ export default function (req, res) {
     .header{
       background-color: #5F5D5D;
       color: #F5F5F5;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;      
-      display: flex;
-      justify-content: center;
+      text-align: center;
+      font-size: 1rem;
     }
 
     .body{
       color: #5F5D5D;
       padding: 1rem;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .titles{
+      font-weight: bold;
     }
   </style>
 </head>
@@ -44,8 +48,10 @@ export default function (req, res) {
     <h4>Sole! Recibiste una solicitud de contacto de ${req.body.name}</h4>
   </div>
   <div class="body">
-    <p>Su mail es: ${req.body.email}</p>
-    <p>Este es su mensaje: ${req.body.message}</p>
+    <p class="titles">Su mail</p>
+    <p>${req.body.email}</p>
+    <p class="titles">Este es su mensaje</p>
+    <p>${req.body.message}</p>
   </div>
 </body>
 </html>
