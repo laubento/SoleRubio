@@ -5,7 +5,7 @@ import Image from "next/image";
 const SectionOne = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.gridContainer}>
+      {/* <div className={styles.gridContainer}> */}
       <div className={styles.grid}>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1kQvXF7jbfxwx7pXi4FhgI1aRWzVZhsJhUi9ZvDYz_nZkHApysCIYbnOKp_coGdzzZxg&usqp=CAU"
@@ -55,7 +55,7 @@ const SectionOne = () => {
           className={styles.photo8}
         />
       </div>
-      </div>
+      {/* </div> */}
       <Image
         src={backgroundImg}
         width={100}
