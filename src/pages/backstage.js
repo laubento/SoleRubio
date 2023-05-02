@@ -4,18 +4,8 @@ import backgroundImg from "../../public/backstage.png";
 
 const Backstage = () => {
   return (
-    <main 
-    // style={{ display: "flex", alignItems: "center", margin: '0 4rem 0 4rem'}}
-    >
-      {/* <div> */}
-        <SectionOne />
-      {/* </div> */}
-      {/* <Image
-        src={backgroundImg}
-        width={100}
-        height={"auto"}
-        style={{ opacity: "0.5", margin: "3rem" }}
-      /> */}
+    <main>
+      <SectionOne />
     </main>
   );
 };

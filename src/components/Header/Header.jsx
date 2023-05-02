@@ -28,7 +28,8 @@ const Header = () => {
   }
   
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
+      <div className={styles.navbar}>
       <Menu handleClick={handleClick} open={open}/>
     
       <Link href="/" style={{ position: 'absolute' }}>
@@ -51,8 +52,9 @@ const Header = () => {
         <NavLink href="/backstage" children={"BACKSTAGE"} />
         <NavLink href="/press" children={"PRENSA"} />
         <Link className={styles.contact} href="/#contact">CONTACTO</Link>
-      </div>        
-    </div>
+      </div> 
+      </div>       
+    </main>
   );
 };
 
