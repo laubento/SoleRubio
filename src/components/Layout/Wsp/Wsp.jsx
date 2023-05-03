@@ -2,6 +2,7 @@
 import Link from "next/link";
 import wtsp from "../../../../public/icons8-whatsapp.svg";
 import Image from "next/image";
+import style from "./Wsp.module.css"
 
 const Wsp = () => {
   return (
@@ -9,7 +10,7 @@ const Wsp = () => {
       <Link href="https://wa.me/5491132911607">
         <Image
         src={wtsp}
-        style={{position: 'fixed', bottom: '2rem', right: '2rem', opacity: '0.8'}}
+        className={style.logo}
          />
       </Link>
     </div>

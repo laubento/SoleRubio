@@ -1,10 +1,9 @@
 .menuWrapper {
   display: none;
 }
-.menuWrapper button{
+.menuWrapper button {
   width: 2.5rem;
   height: 2.5rem;
-  /* margin: 1rem; */
   border: 2px solid var(--secondary-color);
   opacity: 0.5;
   border-radius: 0.8em;
@@ -14,12 +13,10 @@
   align-items: center;
   position: fixed;
   z-index: 999;
-  /* top: 2rem; */
   left: 1.5rem;
 }
 
-/* .menuWrapper span { */
-  .menuTag{
+.menuTag {
   width: 25px;
   height: 2px;
   margin: 2px;
@@ -27,25 +24,15 @@
   border: var(--main-color);
 }
 
-/* .menuWrapperClose div{
-  width: 25px;
-  height: 3px;
-  margin: 2px;
-  background: var(--main-color);
-  border: var(--main-color);
-} */
-
-.closingTag{
+.closingTag {
   width: 25px;
   height: 25px;
   position: relative;
-  /* background: var(--main-color); */
-  /* border: var(--main-color); */
 }
 
-
-.closingTag:before, .closingTag:after{
-  content: '';
+.closingTag:before,
+.closingTag:after {
+  content: "";
   position: absolute;
   width: 25px;
   height: 2px;
@@ -54,28 +41,23 @@
   border-radius: 0.8em;
 }
 
-.closingTag:before{
- -webkit-transform: rotate(45deg);
- -moz-transform: rotate(45deg);
- transform:rotate(45deg);
- left: 1px;
- /* top: 16px; */
+.closingTag:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 1px;
 }
 
-.closingTag:after{
+.closingTag:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
-  transform:rotate(-45deg);
+  transform: rotate(-45deg);
   right: 1px;
-  /* top: 16px; */
- }
+}
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .menuWrapper,
-  .menuWrapperClose
-   {
+  .menuWrapperClose {
     display: initial;
   }
-
-
 }

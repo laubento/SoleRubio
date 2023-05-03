@@ -1,20 +1,24 @@
-.container {
-  /* background: green; */
-  /* width: 100%; */
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
   height: 10rem;
   margin-bottom: 2rem;
 }
 
 .logo,
-.openLogo{
+.openLogo {
   position: absolute;
   top: 4rem;
   left: 3rem;
-
   height: auto;
 }
 
-.openLogo{
+.openLogo {
   left: 5rem;
 }
 
@@ -42,9 +46,25 @@
   border-bottom: solid var(--main-background) 5px;
 }
 
-@media (max-width: 550px) {
-  .container {
-    /* background: red; */
+@media (max-width: 1024px) {
+
+  .navbar{
+    width: 90%;
+  }
+
+  .container a {
+    height: 1.5rem;
+    font-size: 80%;
+  }
+
+  .navContainerClosed,
+  .navContainerOpen {
+    padding-top: 7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -52,52 +72,34 @@
     gap: 0.3rem;
     height: 2rem;
     margin-top: 2rem;
-    padding-left: 1rem;
-    /* transform: translate(80%); */
-    /* z-index: 500; */
-    /* -webkit-transform: translate(50px); */
-    /* -moz-transform: ;
-    -o-transform: ;
-    transform: ; */
   }
 
   .logo {
-    /* margin-left: 1rem; */
     position: initial;
-    /* width: 200px; */
+    padding-left: 1rem;
     min-width: 160px;
     margin-left: 4rem;
   }
 
   .openLogo {
     position: fixed;
+    padding-left: 1rem;
     z-index: 209;
-    /* width: 10px; */
-    /* left: 81.25%; */
-    /* top: 4rem; */
-    /* left: 3rem; */
     width: 40%;
     height: auto;
   }
 
   .navContainerOpen {
     background: var(--main-background);
-    
     border-radius: 1em;
-    box-shadow: 3px 3px 3px #393939, -5px -5px 10px #ffffff;
-    /* padding-top: 1rem; */
-    /* height: 12rem; */
-    /* padding: 0.5rem; */
+    /* border: 1.5px solid #4c4c4c27; */
+    box-shadow: 3px 3px 10px #39393964, -5px -5px 10px #3939392a;
     width: 80%;
     position: fixed;
     left: 0;
-    /* top: 7rem; */
     display: flex;
     flex-direction: column;
     z-index: 80;
-
-    -webkit-transform-origin-x: -10%;
-    -moz-transform-origin-x: -10%;
   }
 
   .navContainerClosed {
@@ -118,6 +120,6 @@
   }
 }
 
-.contact{
+.contact {
   scroll-behavior: smooth;
 }
