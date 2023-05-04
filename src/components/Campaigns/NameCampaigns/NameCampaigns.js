@@ -20,7 +20,6 @@ export function NameCampaigns({data}){
                             <li key={id} className={state && i === 0 ? style["active"] : null}><Link className={style.Link} href={`/campaigns/` + complete}>{id.name}</Link></li>
                         )
                     })}
-                    <li><Link className={style.Linkk} href={`/campaigns/`}>Volver a camapañas</Link></li>
                 </ul>
             </div>
         </div>
