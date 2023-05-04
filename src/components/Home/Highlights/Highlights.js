@@ -10,7 +10,7 @@ export function Highlights() {
 
     return (
         <div>
-            <h2 className={style.titulo}>Destacadas</h2>
+            <h2 className={style.titulo}>DESTACADAS</h2>
             <div className={style["container-main"]}>
                 <div className={style["container-highlights"]}>
                     {/* <div className={style["container"]}> */}

@@ -8,6 +8,7 @@ export function ImageCampaigns({data}) {
 
     return (
         <div className={style["container-main"]}>
+            <h1>CAMPAÑAS</h1>
             <div className={style["container-campaigns"]}>
                 {data.map((el, i) => {
                     let separate = el.name.split(' ')
