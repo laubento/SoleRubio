@@ -15,9 +15,14 @@
     color: rgba(153, 152, 152, 0.945);
 }
 
-.active {
-    color: blue;
-    background-color: blue;
+.active .Link{
+    color: rgb(56, 56, 56);
+    background-color: #c9c9c9;
+    padding: 3px;
+    border-radius: 5px
+}
+.Linkk{
+    border-bottom: solid 1px;
 }
 
 @media(min-width:2000px){
