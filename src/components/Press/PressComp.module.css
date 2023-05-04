@@ -29,6 +29,8 @@
 }
 
 .titles {
+    margin: 0;
+    padding: 0;
     text-align: center;
     letter-spacing: 1rem;
     font-size: 5rem;
