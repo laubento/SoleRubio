@@ -42,22 +42,28 @@ const SectionOne = () => {
           alt=""
           className={styles.photo6}
         />
+
+          <h2 className={styles.title4}>EDITORIAL</h2>
+        <div className={styles.photo7}> 
+
+
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
           alt=""
-          className={styles.photo7}
-        />
-          <h2 className={styles.title4}>EDITORIAL</h2>
+          className={styles.image}
+          />
+
+          </div>
+          
         
         <div className={styles.photo8}>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
           alt=""
-          // className={styles.image}
-           style={{objectFit: 'cover'}}
+          className={styles.image}
+          //  style={{objectFit: 'cover'}}
           // className={styles.photo8}
         />
-        </div>
         {/* <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
           alt=""
@@ -67,12 +73,13 @@ const SectionOne = () => {
       {/* </div> */}
       <Image
         src={backgroundImg}
-        width={100}
+        width='100%'
         height={"auto"}
         className={styles.background}
         alt=""
         // style={{ opacity: "0.5", margin: "3rem", position: 'fixed' }}
-      />
+        />
+        </div>
     </div>
   );
 };

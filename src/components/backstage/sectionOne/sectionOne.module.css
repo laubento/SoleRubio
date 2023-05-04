@@ -119,10 +119,11 @@
 .photo7 {
   grid-column: 3/11;
   grid-row: 20/25;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   object-fit: cover;
   transition-duration: 0.5s;
+  overflow: hidden;
 }
 
 .photo8 {
@@ -132,8 +133,17 @@
   height: 100%;
   object-fit: cover;
   transition-duration: 0.5s;
+  overflow: hidden;
   /* pointer-events: none; */
 }
+
+.image{
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
 
 .photo1:hover,
 .photo2:hover,
@@ -142,10 +152,15 @@
 .photo5:hover,
 .photo6:hover,
 .photo7:hover,
-.photo8:hover {
-  /* object-fit: content; */
+.photo8:hover,
+.image:hover {
+  /* grid-column: 12/auto; */
+  object-fit: unset;
   width: auto;
-  height: 60vh;
+  min-width: 20rem;
+  max-width: 50rem;
+  max-height: 30rem;
+  height: auto;
   z-index: 30;
   /* position: unset; */
   border-radius: 2em;
@@ -157,6 +172,8 @@
   /* transition-duration: 0.5s;   */
   transition: all 0.5s;
 }
+
+
 
 .photo7:hover,
 .photo8:hover {
