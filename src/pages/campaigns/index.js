@@ -26,7 +26,7 @@ export async function getStaticProps() {
     const secret = process.env.CLOUD_SECRET
     let info = ''
 
-    await fetch(`https://api.cloudinary.com/v1_1/${name}/resources/image?max_results=500`, {
+    await fetch(`https://api.cloudinary.com/v1_1/${name}/resources/image/upload?prefix=Sole%20Rubio/&max_results=500`, {
         method: 'GET',
         headers: {
             'Authorization': 'Basic ' + btoa(`${key}:${secret}`)
