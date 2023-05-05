@@ -29,9 +29,24 @@
     flex-direction: column;
     align-items: center;
 }
+.id-title{
+    /* position: relative; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+.container-campaigns h2{
+    margin: 0;
+    font-size: 10em;
+    position: absolute;
+    transform-origin: 100px;
+    transform: rotate(-90deg);
+}
 .id-container-images h4{
     font-size: 35px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
     margin: 0px 0px 10px;
 }
 .id-container-images h5{
