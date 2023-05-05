@@ -11,7 +11,7 @@ export default function Campaigns({ data }) {
   let pepe = data.concat(data).concat(data).concat(data);
 
   const [page, setPage] = useState(1);
-  const [campaignsPerPage, setCampaignsPerPage] = useState(15);
+  const [campaignsPerPage, setCampaignsPerPage] = useState(2);
   const indexLastCampaign = page * campaignsPerPage;
   const indexFirstCampaign = indexLastCampaign - campaignsPerPage;
   const currentCampaigns = pepe.slice(indexFirstCampaign, indexLastCampaign);
