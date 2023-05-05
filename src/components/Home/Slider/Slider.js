@@ -7,7 +7,7 @@ export function Slider() {
   return (
     <div className={style["container-main"]}>
       <div className={style["container-backgroud"]}>
-        <Image
+        {/* <Image
           src={slides}
           id={style["IMG"]}
           alt="slides"
@@ -18,7 +18,7 @@ export function Slider() {
           id={style["IMG"]}
           alt="slides"
           className={style["image-backgroud-two"]}
-        />
+        /> */}
         <div className={style["container-slider"]}>
           <Image
             src={slides}
