@@ -120,6 +120,7 @@
   }
 }
 
-/* .contact {
-  scroll-behavior: smooth;
-} */
+.contact:hover {
+  color: #c9c9c9;
+  transition: all 0.5s;
+}

@@ -51,7 +51,7 @@ const Header = () => {
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />
         <NavLink href="/press" children={"PRENSA"} />
-        <NavLink className={styles.contact} href="/#contact">CONTACTO</NavLink>
+        <Link className={styles.contact} href="/#contact">CONTACTO</Link>
       </div> 
       </div>       
     </main>

@@ -4,7 +4,8 @@ import slides from "../../../images/slides.jpg";
 import slides2 from "../../../images/slides2.jpg";
 
 export function Slider({ data }) {
-  console.log(data)
+
+  
   return (
     <div className={style["container-main"]}>
       <div className={style["container-backgroud"]}>
