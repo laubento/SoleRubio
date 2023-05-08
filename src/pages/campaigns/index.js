@@ -25,7 +25,14 @@ export default function Campaigns({ data }) {
       <div className={style["container-campaigns"]}>
         <NameCampaigns data={currentCampaigns} className={style["desactive"]} />
         <ImageCampaigns data={currentCampaigns} />
-        <Pagination page={page} paging={paging} campaigns ={pepe.length} campaignsPerPage = {campaignsPerPage} />
+      </div>
+      <div className={style["container-campaigns"]}>
+        <div>
+          {/* Tiene que estar vacio */}
+        </div>
+        <div className={style["container-page"]}>
+          <Pagination page={page} paging={paging} campaigns ={pepe.length} campaignsPerPage = {campaignsPerPage} />
+        </div>
       </div>
     </div>
   );
