@@ -193,17 +193,16 @@
         height: 100%;
         width: 100%;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .container-highlights{
         display: flex;
         flex-direction: column;
+        width: 90%;
     }
     .container{
         margin-bottom: 5px;
     }
-}
-@media(max-width: 320px){
-    /* .container-main{
-        width: 305px;
-    } */
 }
