@@ -18,6 +18,7 @@ export async function getStaticProps() {
   const key = process.env.CLOUD_KEY;
   const secret = process.env.CLOUD_SECRET;
   let info = {};
+  let urls = [];
 
   await fetch(
     `https://api.cloudinary.com/v1_1/${name}/resources/image/upload?prefix=Prensa/&max_results=500`,
@@ -30,13 +31,17 @@ export async function getStaticProps() {
   )
     .then((response) => response.json())
     .then((data) => {
-      return (info = data);
+      info = data.resources;
+      urls = info.map((e) => {
+        return e["url"];
+      });
+      return urls;
     })
     .catch((error) => console.error(error));
 
   return {
     props: {
-      data: info,
+      data: urls,
     },
   };
 }
