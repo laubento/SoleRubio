@@ -41,7 +41,7 @@ export async function getStaticPaths() {
     const secret = process.env.CLOUD_SECRET
     let info = ''
 
-    await fetch(`https://api.cloudinary.com/v1_1/${name}/resources/image?max_results=500`, {
+    await fetch(`https://api.cloudinary.com/v1_1/${name}/resources/image/upload?prefix=Sole Rubio/&max_results=500`, {
         method: 'GET',
         headers: {
             'Authorization': 'Basic ' + btoa(`${key}:${secret}`)
@@ -55,7 +55,7 @@ export async function getStaticPaths() {
     const newfound = found.filter((value, index) => {
         return found.indexOf(value) === index;
     });
-
+    console.log(newfound)
     const newName = newfound.map((el) => {
         let split = el.split('/')
         let separate = split[1].split(' ')
@@ -82,7 +82,7 @@ export async function getStaticProps({ params }) {
     const secret = process.env.CLOUD_SECRET
 
     let dataComplete = ''
-
+    console.log(params)
     let nameFound = params.id.split('_')
     let info = 'Sole Rubio/' + nameFound.join(' ')
 
