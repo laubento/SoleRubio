@@ -6,6 +6,7 @@
 }
 .container-about{
     width: 55%;
+    height: 400px;
     display: grid;
     grid-template-columns: 60% 40%;
     justify-content: center;
@@ -20,6 +21,7 @@
 .text h1{
     font-family: var(--font-secondary);
     font-size: 5vw;
+    margin-top: 0px;
 }
 .text p{
     font-size: 1vw;
@@ -29,7 +31,8 @@
 }
 .img{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 @media(max-width: 1050px){
     .container-img{

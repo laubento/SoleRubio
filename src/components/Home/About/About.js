@@ -1,7 +1,7 @@
 import style from './About.module.css'
 import Image from 'next/image'
 import Yo from '../../../images/Yo.jpeg'
-export function About() {
+export function About({data}) {
 
 
     return (
@@ -13,7 +13,7 @@ export function About() {
                     <p>La maravilla de ver la vida a través de un lente es magnificar las pequeñas cosas que nos rodean, inmortalizar el instante perfecto, transmitir emociones, deseos... Me gusta la moda porque ..... Me divierte... Me gusta combinar....Mi vocación es transmitir lo que aprendí..(workshops)</p>
                 </div>
                 <div className={style["container-img"]}>
-                    <Image src={Yo} alt='yo' className={style.img}/>
+                    <Image src={data[0]} alt='yo' className={style.img} width={300} height={300}/>
                 </div>
             </div>
         </div>

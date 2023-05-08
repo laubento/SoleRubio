@@ -24,7 +24,7 @@ export default function Home({data}) {
 
       <div>
         <Extras props={"line"} />
-        <About />
+        <About data={data.About}/>
       </div>
 
       <div className={style["container-highlights"]}>

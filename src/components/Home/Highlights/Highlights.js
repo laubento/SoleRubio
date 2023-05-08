@@ -14,7 +14,7 @@ export function Highlights({ data }) {
             <div className={style["container-main"]}>
                 <div className={style["container-highlights"]}>
                     <Link href={`/campains/${data[0].name.split(' ').join('_')}`} className={style["container"]}>
-                        <Image className={style["img-config"]} src={data[0].url} alt="1" width={300} height={300} />
+                        <Image className={style["img-config"]} src={data[0].url} alt="1" width={1000} height={1000} />
                         <div className={style.hover}>
                             <h5>{data[0].name}</h5>
                         </div>
