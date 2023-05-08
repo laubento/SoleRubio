@@ -20,7 +20,7 @@ export default function Campaign({ data, name }) {
                     <div className={style["id-container-img"]}>
                         {data.map((el,i) => {
                             return(
-                                <Image className={style.img} key={i} src={el} alt={name} width={300} height={300}/>
+                                <Image className={style.img} key={i} src={el} alt={name}  width={450} height={450}/>
                             )
                         })}
                     </div>

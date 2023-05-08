@@ -8,10 +8,10 @@ import { useRouter } from "next/router";
 
 export default function Campaigns({ data }) {
   const router = useRouter();
-  let pepe = data.concat(data).concat(data).concat(data);
+  let pepe = data.reverse()
 
   const [page, setPage] = useState(1);
-  const [campaignsPerPage, setCampaignsPerPage] = useState(2);
+  const [campaignsPerPage, setCampaignsPerPage] = useState(12);
   const indexLastCampaign = page * campaignsPerPage;
   const indexFirstCampaign = indexLastCampaign - campaignsPerPage;
   const currentCampaigns = pepe.slice(indexFirstCampaign, indexLastCampaign);
