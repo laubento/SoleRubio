@@ -1,6 +1,7 @@
 .container-main{
     justify-content: center;
     align-items: center;
+    /* min-height: 1800px; */
 }
 
 .img-container{
@@ -10,8 +11,8 @@
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 2rem;
     grid-template-areas: 
-    "area1 area1 area1 area2 area2 area3 area3 area3"
-    "area1 area1 area1 area2 area2 area3 area3 area3"
+    "area1 area1 area2 area2 area2 area3 area3 area3"
+    "area1 area1 area2 area2 area2 area3 area3 area3"
     "area4 area4 area5 area5 area6 area6 area7 area7"
     "area4 area4 area5 area5 area6 area6 area7 area7"
     "area4 area4 area8 area8 area8 area8 area7 area7"
@@ -25,7 +26,6 @@
     width: 100%;
     height: 100%;
     transition-duration: 0.5s;
-    /* height: 600px; */
 }
 
 .titles {
@@ -103,12 +103,12 @@
         grid-template-areas: 
             "area1 area1 area1 area1 area2 area2 area2 area2"
             "area1 area1 area1 area1 area2 area2 area2 area2"
-            "area3 area3 area3 area3 area4 area4 area5 area5"
-            "area3 area3 area3 area3 area4 area4 area5 area5"
+            "area3 area3 area3 area3 area3 area3 area5 area5"
+            "area3 area3 area3 area3 area3 area3 area5 area5"
             "area6 area6 area6 area6 area7 area7 area7 area7"
             "area6 area6 area6 area6 area7 area7 area7 area7"
-            "area8 area8 . area9 area9 . area10 area10"
-            "area8 area8 . area9 area9 . area10 area10"
+            "area8 area8 area4 area4 area9 area9 area10 area10"
+            "area8 area8 area4 area4 area9 area9 area10 area10"
     }
 }
 
@@ -118,6 +118,7 @@
         letter-spacing: .5rem;
     }
     .img-container{
+        max-height: 2000px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(12, 1fr);
         grid-template-areas: 
@@ -137,6 +138,14 @@
 
     .images:nth-child(6){
         height: 80%;
+    }
+
+    .images:nth-child(3){
+        border-radius: 0%;
+    }
+
+    .images:nth-child(10){
+        border-radius: 50%;
     }
 }
 
