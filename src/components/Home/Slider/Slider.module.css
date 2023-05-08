@@ -91,21 +91,26 @@
 
 @media(max-width: 1440px){
     .container-main{
-        height: 36vh;
+        height: 46vh;
     }
 }
 @media(max-width: 1200px){
     .container-main{
-        height: 32vh;
+        height: 42vh;
     }
 }
 @media(max-width: 900px){
     .container-main{
-        height: 25vh;
+        height: 35vh;
     }
 }
 @media(max-width: 600px){
     .container-main{
-        height: 22vh;
+        height: 32vh;
+    }
+}
+@media(max-width: 450px){
+    .container-main{
+        height: 24vh;
     }
 }

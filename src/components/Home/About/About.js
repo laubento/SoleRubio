@@ -13,7 +13,7 @@ export function About({data}) {
                     <p>La maravilla de ver la vida a través de un lente es magnificar las pequeñas cosas que nos rodean, inmortalizar el instante perfecto, transmitir emociones, deseos... Me gusta la moda porque ..... Me divierte... Me gusta combinar....Mi vocación es transmitir lo que aprendí..(workshops)</p>
                 </div>
                 <div className={style["container-img"]}>
-                    <Image src={data[0]} alt='yo' className={style.img} width={300} height={300}/>
+                    <Image src={data[0]} alt='yo' className={style.img} width={400} height={400}/>
                 </div>
             </div>
         </div>

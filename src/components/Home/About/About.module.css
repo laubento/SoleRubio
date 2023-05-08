@@ -19,11 +19,11 @@
 }
 .text h1{
     font-family: var(--font-secondary);
-    font-size: 5vw;
+    font-size: 3vw;
     margin-top: 0px;
 }
 .text p{
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 .container-img{
     width: 100%;
@@ -39,10 +39,10 @@
         width: 70%;
     }
     .text p{
-        font-size: 1.3vw;
+        font-size: 0.8vw;
     }
     .text h1{
-        font-size: 6vw;
+        font-size: 3vw;
     }
 }
 @media(max-width: 1050px){
@@ -50,10 +50,10 @@
         width: 85%;
     }
     .text p{
-        font-size: 1.7vw;
+        font-size: 1.3vw;
     }
     .text h1{
-        font-size: 6vw;
+        font-size: 4vw;
     }
 }
 @media(max-width: 650px){
@@ -61,24 +61,24 @@
         width: 90%;
     }
     .text p{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
     .text h1{
-        font-size: 8vw;
+        font-size: 5vw;
     }
 }
 @media(max-width:500px){
     .container-about{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-items: center;
     }
     .text p{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .text h1{
-        font-size: 12vw;
+        font-size: 10vw;
         margin-bottom: 10px;
     }
 }

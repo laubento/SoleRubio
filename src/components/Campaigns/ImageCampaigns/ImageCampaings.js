@@ -15,7 +15,7 @@ export function ImageCampaigns({data}) {
                     let complete = separate.join('_')
                     return(
                         <Link key={el} href={'/campaigns/' + complete} className={style.Link}>
-                            <Image src={el.url} alt={el.name} className={style["img"]} width={220} height={220}/>
+                            <Image src={el.url} alt={el.name} className={style["img"]} width={300} height={300}/>
                             <p>{el.name}</p>
                         </Link>
                     )
