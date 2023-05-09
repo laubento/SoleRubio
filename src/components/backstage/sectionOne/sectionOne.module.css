@@ -17,14 +17,25 @@
 }
 
 .grid {
-  width: 60%;  
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  /* grid-template-columns: repeat(16, auto-fit); */
   grid-template-rows: repeat(24, 4rem);
-  /* grid-template-rows: repeat(24, auto-fit); */
-  position: relative;
   margin-bottom: 3rem;
+}
+
+.gridAuto {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+  border: 6px solid black;
 }
 
 .title1 {
@@ -54,7 +65,6 @@
   grid-column: 1/3;
   grid-row: 23;
   font-size: 120%;
-  
 }
 
 .photo1 {
@@ -67,14 +77,16 @@
 }
 
 .photo2 {
+  background:var(--main-background);
   grid-column: 9/16;
   grid-row: 2/7;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: brightness(0.5);
   /* overflow: hidden; */
-  border: 6px solid black;
-  transition-duration: 0.5s;
+  border: 4px solid black;
+  transition: all 0.9s;
 }
 
 .photo3 {
@@ -82,8 +94,8 @@
   grid-row: 7/13;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transition-duration: 0.5s;
+  object-fit: cover;
+  /* transition-duration: 0.5s; */
 }
 
 .photo4 {
@@ -93,7 +105,6 @@
   height: 100%;
   object-fit: contain;
   transition-duration: 0.5s;
-
 }
 
 .photo5 {
@@ -124,7 +135,6 @@
   object-fit: contain;
   overflow: hidden;
   transition-duration: 0.5s;
-
 }
 
 .photo8 {
@@ -136,33 +146,42 @@
   overflow: hidden;
 }
 
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover,
+.photo5:hover,
 .photo6:hover,
 .photo7:hover,
-.photo8:hover{
- object-fit: unset;
-  max-height: 26rem;
-height: auto;
-  width: auto;
-  min-width: 22rem;
+.photo8:hover {
+  /* object-fit: contain; */
+  /* grid-column:2/11; */
+  /* max-height: 16rem; */
+  /* height: auto; */
+  /* width: auto; */
+  /* min-width: 22rem; */
+  /* max-width: 22rem; */
 
-  border-radius: 2em;
-  border: 2px solid white; 
-  
+
+  border-radius: 1em;
+  border: 2px solid white;
+  filter:brightness(1);
   /* overflow: visible; */
   transform: scale(1.2);
-  transition: all 0.5s;
-
+  transition: all 0.9s;
 }
 
-.image{
+.photo3:hover{
+  grid-column:2/11
+}
+
+.image {
   width: 100%;
   height: 100%;
   /* object-fit: contain; */
   backface-visibility: hidden;
   /* pointer-events: none; */
 }
-
-
 
 /* .photo1:hover,
 .photo2:hover,
@@ -189,41 +208,40 @@ height: auto;
 } */
 
 .photo7:hover,
-.photo8:hover { 
+.photo8:hover {
   position: absolute;
   bottom: 0rem;
-  }
+}
 
-
-@media(min-height: 1112px) {
-  .grid{
+@media (min-height: 1112px) {
+  .grid {
     display: grid;
-    grid-template-rows: repeat(24, 2rem)
+    grid-template-rows: repeat(24, 2rem);
   }
 }
 
-@media(max-width: 1024px) {
-  .grid{
+@media (max-width: 1024px) {
+  .grid {
     display: grid;
-    grid-template-rows: repeat(24, 2.5rem)
+    grid-template-rows: repeat(24, 2.5rem);
   }
 }
 
-@media(min-height: 800px) {
-  .grid{
+@media (min-height: 800px) {
+  .grid {
     display: grid;
-    grid-template-rows: repeat(24, 2rem)
+    grid-template-rows: repeat(24, 2rem);
   }
 }
 
-@media(max-width: 768px) {
-  .grid{
+@media (max-width: 768px) {
+  .grid {
     display: grid;
-    grid-template-rows: repeat(24, 2rem)
+    grid-template-rows: repeat(24, 2rem);
   }
 }
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .background {
     position: fixed;
     left: 0px;
@@ -263,33 +281,26 @@ height: auto;
 
   .title1,
   .title3 {
-    margin: 0 0 0 5rem;    
+    margin: 0 0 0 5rem;
   }
 
-  .title2{
+  .title2 {
     margin: 0;
   }
 
-  .title4{
+  .title4 {
     transform: unset;
     margin-left: 8rem;
   }
 
-.photo1:hover,
-.photo2:hover,
-.photo3:hover,
-.photo4:hover,
-.photo5:hover,
-.photo6:hover,
-.photo7:hover,
-.photo8:hover {
-all: unset;
+  .photo1:hover,
+  .photo2:hover,
+  .photo3:hover,
+  .photo4:hover,
+  .photo5:hover,
+  .photo6:hover,
+  .photo7:hover,
+  .photo8:hover {
+    all: unset;
+  }
 }
-}
-
-
-
-
-
-
-
