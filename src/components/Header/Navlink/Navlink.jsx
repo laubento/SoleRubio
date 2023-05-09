@@ -16,7 +16,8 @@ const Navlink = ({ href, children }) => {
   //recargo la página para corregir delays entre la hidratación de next y la renderización
   useEffect(() => {
     //comparo si la ruta que se muestra en la url del navegador es la misma que la href
-    const ariaCurrent = href === asPath ? "page" : undefined;
+    const ariaCurrent = href === asPath ? "page" 
+    : undefined;
     //actualizo el valor de ariaCurrent una vez recargada la página
     setAriaCurrent(ariaCurrent);
   }, [asPath, href]);
