@@ -24,8 +24,6 @@ const Header = () => {
       <Menu handleClick={handleClick} open={open} />
     
       <Link href="/" className={styles.linkLogo}>
-
-      {/* <Link href="/" style={{ position: 'abosolute' }}> */}
         <Image
           src={logo}
           alt="logo soleRubio"
@@ -38,7 +36,6 @@ const Header = () => {
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
       >              
-        {/* <span className={styles.hiddenButton} > </span>             */}
         <NavLink href="/" children={"INICIO"} />
         <NavLink href="/campaigns" children={"CAMPAÑAS"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />
