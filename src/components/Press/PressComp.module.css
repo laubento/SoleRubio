@@ -7,6 +7,7 @@
 .img-container{
     width: 100%;
     display: grid;
+    
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 2rem;
@@ -16,9 +17,9 @@
     "area4 area4 area5 area5 area6 area6 area7 area7"
     "area4 area4 area5 area5 area6 area6 area7 area7"
     "area4 area4 area8 area8 area8 area8 area7 area7"
-    "area9 area9 area8 area8 area8 area8 . ."
     "area9 area9 area8 area8 area8 area8 area10 area10"
-    "area9 area9 area8 area8 area8 area8 area10 area10";
+    "area9 area9 area8 area8 area8 area8 area10 area10"
+    "area9 area9 area8 area8 area8 area8 . .";
 }
 
 .images {
@@ -29,12 +30,13 @@
 }
 
 .titles {
-    margin: 0;
+    margin: 1.5rem;
     padding: 0;
     text-align: center;
     letter-spacing: 1rem;
     font-size: 5rem;
     color: var(--secondary-color);
+    border-bottom: solid 1px var(--secondary-color);
 }
 
 .images:nth-child(1){
@@ -65,6 +67,7 @@
 
 .images:nth-child(7){
     grid-area: area7;
+    height: 80%;
 }
 
 .images:nth-child(8){
@@ -100,6 +103,7 @@
 
     .img-container{
         gap: 1rem;
+        grid-template-rows: repeat(10, 1fr);
         grid-template-areas: 
             "area1 area1 area1 area1 area2 area2 area2 area2"
             "area1 area1 area1 area1 area2 area2 area2 area2"
@@ -107,12 +111,25 @@
             "area3 area3 area3 area3 area3 area3 area5 area5"
             "area6 area6 area6 area6 area7 area7 area7 area7"
             "area6 area6 area6 area6 area7 area7 area7 area7"
-            "area8 area8 area4 area4 area9 area9 area10 area10"
-            "area8 area8 area4 area4 area9 area9 area10 area10"
+            "area8 area8 area8 area8 area4 area4 area4 area4" 
+            "area8 area8 area8 area8 area4 area4 area4 area4"
+            "area9 area9 area9 area9 area10 area10 area10 area10"
+            "area9 area9 area9 area9 area10 area10 area10 area10"
     }
+
+    .images:nth-child(8){
+        width: 90%;
+        /* height: 90%; */
+    }
+
+    .images:nth-child(10){
+        width: 90%;
+        justify-self: flex-end;
+    }
+    
 }
 
-@media(max-width: 500px){
+@media(max-width: 550px){
     .titles{
         font-size: 2rem;
         letter-spacing: .5rem;

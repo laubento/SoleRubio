@@ -1,82 +1,38 @@
 import styles from "./sectionOne.module.css";
 import backgroundImg from "../../../../public/backstage.png";
+// import imgOne from "../../../../public/image1.jpg";
+// import img2 from "../../../../public/image2.jpg";
 import Image from "next/image";
 
-const SectionOne = () => {
+const SectionOne = ({ backImages }) => {
   return (
     <div className={styles.container}>
       {/* <div className={styles.gridContainer}> */}
+
+      {/* {backImages.length === 8 && ( */}
       <div className={styles.grid}>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1kQvXF7jbfxwx7pXi4FhgI1aRWzVZhsJhUi9ZvDYz_nZkHApysCIYbnOKp_coGdzzZxg&usqp=CAU"
-          alt=""
-          className={styles.photo1}
-        />
-          <h2 className={styles.title1}>FOTOGRAFIA</h2>
+        <img src={backImages[0]} alt="image" className={styles.photo1} />
+        <h2 className={styles.title1}>FOTOGRAFIA</h2>
+        <img src={backImages[1]} alt="image" className={styles.photo2} />
+        <h2 className={styles.title2}>ADVERTISING</h2>
+        <img src={backImages[2]} alt="image" className={styles.photo3} />
+        <img src={backImages[3]} alt="image" className={styles.photo4} />
+        <img src={backImages[4]} alt="image" className={styles.photo5} />
+        <h2 className={styles.title3}>BOOKS</h2>
+        <img src={backImages[5]} alt="image" className={styles.photo6} />
+        <h2 className={styles.title4}>EDITORIAL</h2>
+        <img src={backImages[6]} alt="image" className={styles.photo7} />
+        <img src={backImages[7]} alt="image" className={styles.photo8} />
 
-        <img
-          src="https://i0.wp.com/fashionablymale.net/wp-content/uploads/2020/11/Mariano-Ontanon-by-Sole-Rubio-Dromo-Hombre8.jpg?resize=819%2C1024&ssl=1"
+        <Image
+          src={backgroundImg}
+          width="100%"
+          height={30}
+          className={styles.background}
           alt=""
-          className={styles.photo2}
+          style={{ opacity: "0.5", margin: "3rem", position: "fixed" }}
         />
-          <h2 className={styles.title2}>ADVERTISING</h2>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
-          alt=""
-          className={styles.photo3}
-        />
-
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1kQvXF7jbfxwx7pXi4FhgI1aRWzVZhsJhUi9ZvDYz_nZkHApysCIYbnOKp_coGdzzZxg&usqp=CAU"
-          alt=""
-          className={styles.photo4}
-        />
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1kQvXF7jbfxwx7pXi4FhgI1aRWzVZhsJhUi9ZvDYz_nZkHApysCIYbnOKp_coGdzzZxg&usqp=CAU"
-          alt=""
-          className={styles.photo5}
-        />
-          <h2 className={styles.title3}>BOOKS</h2>
-        <img
-          src="https://i0.wp.com/fashionablymale.net/wp-content/uploads/2020/11/Mariano-Ontanon-by-Sole-Rubio-Dromo-Hombre8.jpg?resize=819%2C1024&ssl=1"
-          alt=""
-          className={styles.photo6}
-        />
-
-          <h2 className={styles.title4}>EDITORIAL</h2>
-        <div className={styles.photo7}> 
-
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
-          alt=""
-          className={styles.image}
-          />
-          </div>
-        
-        <div className={styles.photo8}>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
-          alt=""
-          className={styles.image}
-          //  style={{objectFit: 'cover'}}
-          // className={styles.photo8}
-        />
-        {/* <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwrfObKHZjRzWJNo8IKAqmocJjXGrQUvZX-yvWAI9w86pWPvWfYguZYZwu0QpK4XTib4&usqp=CAU"
-          alt=""
-          className={styles.photo8}
-        /> */}
       </div>
-      {/* </div> */}
-      <Image
-        src={backgroundImg}
-        width='100%'
-        height={"auto"}
-        className={styles.background}
-        alt=""
-        // style={{ opacity: "0.5", margin: "3rem", position: 'fixed' }}
-        />
-        </div>
     </div>
   );
 };

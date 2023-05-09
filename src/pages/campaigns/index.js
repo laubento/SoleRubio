@@ -4,13 +4,12 @@ import style from "../../styles/campaigns.module.css";
 import Pagination from "../../components/Campaigns/Pagination/Pagination";
 import { useState } from "react";
 import dotenv from "dotenv";
-import { useRouter } from "next/router";
 
 export default function Campaigns({ data }) {
-  const router = useRouter();
-  let pepe = data.reverse()
+  let pepe = data
 
   const [page, setPage] = useState(1);
+
   const [campaignsPerPage, setCampaignsPerPage] = useState(12);
   const indexLastCampaign = page * campaignsPerPage;
   const indexFirstCampaign = indexLastCampaign - campaignsPerPage;
@@ -62,7 +61,7 @@ export async function getStaticProps() {
                     names[item.folder] = true
                 }
             })
-            return info = newInfo
+            return info = newInfo.reverse()
         })
         .catch(error => console.error(error))
 

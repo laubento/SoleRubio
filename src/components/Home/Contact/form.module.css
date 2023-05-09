@@ -21,6 +21,7 @@
 }
 
 .inputMessage {
+    width: 100%;
     background-color: transparent;
     border: none;
     border-bottom: solid 0.5px var(--main-color);    
