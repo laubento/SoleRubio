@@ -2,13 +2,18 @@
     background-color: #6F6D6D;
     display: flex;
     justify-content: center;
-   
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .container-main p{
     color: white;
     margin: 0;
     padding: 20px;
     font-family: 'Trispace';
+}
+.container{
+    height: 100%;
 }
 @media(max-width: 650px){
     .container-main p{

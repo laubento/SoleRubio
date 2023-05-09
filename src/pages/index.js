@@ -33,6 +33,7 @@ export default function Home({data}) {
         <Extras props={"line"} />
       </div>
       <div className={style["container-contact"]}>
+      <h2 style={{fontSize: "30px", fontWeight: "100", marginBottom: "0", marginTop:"40px"}}>CONTACTO</h2>
         <Contact />
       </div>
     </main>
