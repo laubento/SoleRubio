@@ -113,10 +113,10 @@
     position: fixed;
     margin: initial;
     margin-left: 50px;
-
+    /* margin-top: 2rem; */
     /* margin-left: 4rem; */
     z-index: 209;
-    width: 8rem;
+    width: 10rem;
     /* height: auto; */
   }
 
@@ -137,33 +137,28 @@
     flex-direction: column;
     z-index: 80;
   }
-
   .navContainerClosed {
     display: none;
   }
-
-  /* .hiddenButton {
-    border: none;
-  } */
-
   .container a {
     height: 50px;
     border: none;
   }
-
   .container button:active {
     border: none;
   }
 }
 
-.contact:hover {
+/* .contact:hover {
   color: #c9c9c9;
   transition: all 0.5s;
-}
+} */
 
-@media (max-width: 300px) {
+@media (max-width: 330px) {
   .navContainerOpen {
     width: 100%;
   }
-
+  .openLogo{
+    width: 8rem;
+  }
 }
