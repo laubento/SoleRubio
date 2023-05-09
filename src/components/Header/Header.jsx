@@ -48,7 +48,7 @@ const Header = () => {
       >              
         <span className={styles.hiddenButton} > </span>            
         <NavLink href="/" children={"INICIO"} />
-        <NavLink href="/campaigns" children={"CAMPAÑAS"} />
+        <NavLink href="/campaigns" children={"SHOOTING"} />
         <NavLink href="/backstage" children={"BACKSTAGE"} />
         <NavLink href="/press" children={"PRENSA"} />
         <Link className={styles.contact} href="/#contact">CONTACTO</Link>
