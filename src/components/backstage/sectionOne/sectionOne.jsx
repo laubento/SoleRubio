@@ -7,9 +7,6 @@ import Image from "next/image";
 const SectionOne = ({ backImages }) => {
   return (
     <div className={styles.container}>
-      {/* <div className={styles.gridContainer}> */}
-
-      {/* {backImages.length === 8 && ( */}
       <div className={styles.grid}>
         <img src={backImages[0]} alt="image" className={styles.photo1} />
         <h2 className={styles.title1}>FOTOGRAFIA</h2>
@@ -17,8 +14,8 @@ const SectionOne = ({ backImages }) => {
         <h2 className={styles.title2}>ADVERTISING</h2>
         <img src={backImages[2]} alt="image" className={styles.photo3} />
         <img src={backImages[3]} alt="image" className={styles.photo4} />
-        <img src={backImages[4]} alt="image" className={styles.photo5} />
         <h2 className={styles.title3}>BOOKS</h2>
+        <img src={backImages[4]} alt="image" className={styles.photo5} />
         <img src={backImages[5]} alt="image" className={styles.photo6} />
         <h2 className={styles.title4}>EDITORIAL</h2>
         <img src={backImages[6]} alt="image" className={styles.photo7} />
@@ -26,15 +23,17 @@ const SectionOne = ({ backImages }) => {
 
         <Image
           src={backgroundImg}
-          width="100%"
-          height={30}
+          width={900}
+          height={200}
           className={styles.background}
           alt=""
-          style={{ opacity: "0.5", margin: "3rem", position: "fixed" }}
+          style={{ opacity: "0.3", margin: "3rem", position: "fixed" }}
         />
       </div>
+      {/* <div className={styles.background}>
+        <span >BACKSTAGE</span>
+      </div> */}
     </div>
   );
 };
-
 export default SectionOne;

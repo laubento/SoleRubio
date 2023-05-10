@@ -10,6 +10,7 @@ const SectionTwo = ({ backImages }) => {
         <img src={backImages[index]} key={index} id={el.key} alt="image" className={styles.photo} />
        )}
         </div>
+        
     </main>
   );
 };

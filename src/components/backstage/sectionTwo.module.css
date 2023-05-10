@@ -5,30 +5,40 @@
 }
 
 .imagesContainer {
-    width: 60%;
+    width: 50%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
   
   .photo {
     width: 100%;
     height: auto;
-    /* border-radius: 2em; */
-    /* border: 6px solid black; */
+    filter: brightness(0.3);
+    transition: all 0.9s;
   }
-
+  .photo:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+    transition: all 0.9s;
+    z-index: 300;
+  }
  
 @media (max-width: 550px) {
-
   .imagesContainer {
     width: 60%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
-  .photo:hover {
-    all: unset;
+  .photo {
+  width: 80%;
+  filter: initial;
+  transition: none;
+  pointer-events: none;
   }
+ 
 }
