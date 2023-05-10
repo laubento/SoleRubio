@@ -82,13 +82,14 @@
     grid-area: area10;
 }
 
-.images:hover {
+.images:hover:not(:focus) {
     -webkit-transform:scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform:scale(1.1);
     transition-duration: 0.5s;
 }
+
 
 @media(max-width:1150px){
     .titles{
@@ -194,5 +195,11 @@
 
 .buttonRemove{
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.783)
+    color: rgba(0, 0, 0, 0.783);
+    transition: all 0.3s;
+}
+
+.buttonRemove:hover{
+    color: rgba(63, 61, 61, 0.783);
+    transition: all 0.3s;
 }

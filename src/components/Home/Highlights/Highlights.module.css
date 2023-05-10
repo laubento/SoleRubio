@@ -17,10 +17,12 @@
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 50px;
 }
+
 .container{
     position: relative;
     cursor: pointer;
     background-color: black;
+    transition: all 0.5s;
 }
 .container:hover > .hover{
     animation-name: hover;

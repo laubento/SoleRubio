@@ -12,6 +12,16 @@ const PressComp = ({ data }) => {
   const [image, setImage] = useState();
   const [index, setIndex] = useState();
 
+  const handleChange = (e) => {
+    e.preventDefault();
+    let src = e.target.src;
+    console.log(src, "SRCCCCC");
+    let urlModal = src.substring(src.indexOf("/_next"));
+    setImage(urlModal);
+    console.log(image, "SRC DONE");
+    setModalState(true);
+  };
+
   return (
     <>
       {modalState && (
@@ -20,15 +30,13 @@ const PressComp = ({ data }) => {
             className={style.buttonRemove}
             onClick={(e) => setModalState(false)}
           />
-          <div>
-            <Image
-              src={data[index]}
-              alt="press"
-              className={style.totalImage}
-              width={1000}
-              height={1000}
-            />
-          </div>
+          <Image
+            src={image}
+            alt="press"
+            className={style.totalImage}
+            width={1000}
+            height={1000}
+          />
         </div>
       )}
       <div className={style["container-main"]}>
@@ -40,7 +48,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={1000}
-            onClick={(e) => setModalState(true) && setIndex(2)}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[2]}
@@ -48,6 +57,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={1000}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[2]}
@@ -55,6 +66,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[0]}
@@ -62,6 +75,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[0]}
@@ -69,6 +84,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[2]}
@@ -76,6 +93,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[0]}
@@ -83,6 +102,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[1]}
@@ -90,6 +111,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={1000}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[2]}
@@ -97,6 +120,8 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
           <Image
             src={data[0]}
@@ -104,14 +129,9 @@ const PressComp = ({ data }) => {
             alt="press"
             width={1000}
             height={600}
+            tabindex="0"
+            onClick={(e) => handleChange(e)}
           />
-
-          {/* <Image src={img2} className={style.images} alt="press" />
-          <Image src={img3} className={style.images} alt="press" />
-          <Image src={img} className={style.images} alt="press" />
-          <Image src={img2} className={style.images} alt="press" />
-          <Image src={img3} className={style.images} alt="press" />
-          <Image src={img} className={style.images} alt="press" /> */}
         </div>
       </div>
     </>
