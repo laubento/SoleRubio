@@ -99,16 +99,11 @@
     position: fixed;
     margin: initial;
     margin-left: 50px;
-<<<<<<< HEAD
     /* margin-top: 2rem; */
     /* margin-left: 4rem; */
     z-index: 209;
     width: 10rem;
     /* height: auto; */
-=======
-    z-index: 209;
-    width: 8rem;
->>>>>>> Noe
   }
 
    .navContainerOpen {
@@ -126,10 +121,6 @@
   .navContainerClosed {
     display: none;
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> Noe
   .container a {
     height: 50px;
     border: none;
