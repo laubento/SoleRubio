@@ -153,6 +153,10 @@
             "area8 area8 area10 area10"            
     }
 
+    .images:nth-child(2){
+        height: 80%;
+    }
+
     .images:nth-child(6){
         height: 80%;
     }
@@ -167,8 +171,28 @@
 }
 
 
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.totalImage {
+    max-height: 90vh;
+    object-fit:contain;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+}
 
-
-
-    
+.buttonRemove{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.783)
+}
