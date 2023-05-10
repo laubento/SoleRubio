@@ -7,13 +7,37 @@
 
 .background {
   opacity: 0.5;
-  margin: 1rem;
+  margin: 3rem;
   position: absolute;
   width: 6rem;
   height: auto;
   top: 9rem;
   right: 5rem;
   z-index: -1;
+}
+
+/* .background {
+  width: 95%;
+  display: flex;
+  height: 100%;
+    position: relative;
+  transform: rotate(-90deg);
+  position: fixed;
+  z-index: -1;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+} */
+
+.background span{
+  opacity: 0.5;
+
+  /* font-size: 8.5rem;
+  position: fixed; */
+
+font-size: 190px;
+/* margin-right: 20px; */
+  
 }
 
 .grid {
@@ -178,42 +202,37 @@
 }
 
 .photo7:hover {
-  grid-column: 2/12;
+  grid-column: 1/13;
 }
 
 .photo8:hover {
   grid-column: 7/19;
 }
 
-@media (min-height: 1112px) {
+@media (max-height: 1368px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(24, 3rem);
+  }
+}
+
+@media (max-height: 802px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(24, 3.5rem);
+  }
+}
+
+@media (max-width: 835px) {
   .grid {
     display: grid;
     grid-template-rows: repeat(24, 2rem);
   }
-}
-
-@media (max-width: 1024px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 2.5rem);
-  }
-}
-
-@media (min-height: 800px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 2rem);
-  }
-}
-
-@media (max-width: 768px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 2rem);
-  }
+  
 }
 
 @media (max-width: 550px) {
+
   .background {
     position: fixed;
     left: 0px;
@@ -222,7 +241,12 @@
     height: auto;
   }
 
-  .grid {
+  /* .background {
+    position: fixed;
+    left: 0rem;
+  } */
+  
+    .grid {
     width: 60%;
     display: flex;
     flex-direction: row;

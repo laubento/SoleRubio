@@ -7,7 +7,6 @@ import Image from "next/image";
 const SectionOne = ({ backImages }) => {
   return (
     <div className={styles.container}>
-
       <div className={styles.grid}>
         <img src={backImages[0]} alt="image" className={styles.photo1} />
         <h2 className={styles.title1}>FOTOGRAFIA</h2>
@@ -24,15 +23,17 @@ const SectionOne = ({ backImages }) => {
 
         <Image
           src={backgroundImg}
-          width="100%"
-          height={30}
+          width={900}
+          height={200}
           className={styles.background}
           alt=""
           style={{ opacity: "0.5", margin: "3rem", position: "fixed" }}
         />
       </div>
+      {/* <div className={styles.background}>
+        <span >BACKSTAGE</span>
+      </div> */}
     </div>
   );
 };
-
 export default SectionOne;
