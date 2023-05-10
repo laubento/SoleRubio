@@ -27,7 +27,7 @@ const SectionOne = ({ backImages }) => {
           height={200}
           className={styles.background}
           alt=""
-          style={{ opacity: "0.5", margin: "3rem", position: "fixed" }}
+          style={{ opacity: "0.3", margin: "3rem", position: "fixed" }}
         />
       </div>
       {/* <div className={styles.background}>

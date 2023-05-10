@@ -38,8 +38,7 @@
   width: 80%;
   filter: initial;
   transition: none;
+  pointer-events: none;
   }
-  .photo:hover {
-    all: unset;
-  }
+ 
 }
