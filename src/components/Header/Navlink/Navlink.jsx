@@ -13,10 +13,8 @@ const Navlink = ({ href, children }) => {
   //uso el hook para extraer la ruta que se muestra en el browser
   const { asPath } = useRouter();
 
-
   //recargo la página para corregir delays entre la hidratación de next y la renderización
   useEffect(() => {
-    console.log(asPath)
     //comparo si la ruta que se muestra en la url del navegador es la misma que la href
     const ariaCurrent = href === asPath || (asPath === '/#contact' && href === '/') ? "page" : undefined;
     //actualizo el valor de ariaCurrent una vez recargada la página

@@ -10,7 +10,6 @@
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  /* height: unset;   */
   align-items: flex-end;
 }
 
@@ -31,13 +30,8 @@
 .logo,
 .openLogo {
   margin-bottom: 4rem;
-  width: auto;
-  /* max-width: 70%; */
-  height: auto;
-  /* position: absolute;
-  top: 4rem;
-  left: 3rem;
-  height: auto; */
+  /* width: auto; */
+  height: auto; 
 }
 
 .hiddenButton {
@@ -85,49 +79,41 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    /* gap: 0.3rem; */
     width: 100%;
     height: 7rem;
-    /* margin-top: 2rem; */
   }
   .linkLogo{    
     height: 6rem;
     display: flex;
     justify-content: center;;
-    /* width: 80%; */
     width: 60rem;
   }
   .logo {
     margin: initial;  
-    /* width: 100%; */
     height: 100%;
     position: initial;
     padding-left: 1rem;
-
-    /* min-width: 160px; */
-
-
   }
 
   .openLogo {
     position: fixed;
     margin: initial;
     margin-left: 50px;
+<<<<<<< HEAD
     /* margin-top: 2rem; */
     /* margin-left: 4rem; */
     z-index: 209;
     width: 10rem;
     /* height: auto; */
+=======
+    z-index: 209;
+    width: 8rem;
+>>>>>>> Noe
   }
 
-  .menu{
-    background: olivedrab;
-  }
-
-  .navContainerOpen {
+   .navContainerOpen {
     background: var(--main-background);
     border-radius: 1em;
-    /* border: 1.5px solid #4c4c4c27; */
     box-shadow: 3px 3px 10px #39393964, -5px -5px 10px #3939392a;
     width: 80%;
     position: fixed;
@@ -140,6 +126,10 @@
   .navContainerClosed {
     display: none;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Noe
   .container a {
     height: 50px;
     border: none;
