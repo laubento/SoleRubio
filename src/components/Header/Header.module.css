@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 700px) {
+  .container{
+    height: 5.5rem;
+  }
   .navbar {
     display: flex;
     flex-direction: row;
@@ -130,10 +133,10 @@
   }
 }
 
-.contact:hover {
+/* .contact:hover {
   color: #c9c9c9;
   transition: all 0.5s;
-}
+} */
 
 @media (max-width: 300px) {
   .navContainerOpen {

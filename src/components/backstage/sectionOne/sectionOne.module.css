@@ -6,9 +6,9 @@
 }
 
 .background {
-  opacity: 0.5;
+  /* opacity: 0.3; */
   margin: 3rem;
-  position: absolute;
+  /* position: absolute; */
   width: 6rem;
   height: auto;
   top: 9rem;
@@ -29,16 +29,10 @@
   align-items: flex-end;
 } */
 
-.background span{
+/* .background span{
   opacity: 0.5;
-
-  /* font-size: 8.5rem;
-  position: fixed; */
-
-font-size: 190px;
-/* margin-right: 20px; */
-  
-}
+font-size: 190px;  
+} */
 
 .grid {
   width: 60%;
@@ -292,14 +286,15 @@ font-size: 190px;
 
   }
 
-  .photo1:hover,
-  .photo2:hover,
-  .photo3:hover,
-  .photo4:hover,
-  .photo5:hover,
-  .photo6:hover,
-  .photo7:hover,
-  .photo8:hover {
-    all: none;
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6,
+  .photo7,
+  .photo8{
+    pointer-events: none 
   }
+
 }
