@@ -1,5 +1,5 @@
 .container {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 80%;
     height: 302px;
     display: grid;
@@ -31,6 +31,7 @@
         display: grid;
         grid-template-columns: 1fr;
         height: fit-content;
+        margin-top: 2rem;
     }
     
     .contact{

@@ -40,7 +40,7 @@ export function Highlights({ data }) {
                 </div>
             </div>
             <div className={style["see-more"]}>
-                <Link href={"/campains"} className={style.link} >
+                <Link href={"/campaigns"} className={style.link} >
                     <h3>Ver mas</h3>
                 </Link>
             </div>
