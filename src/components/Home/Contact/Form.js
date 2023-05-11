@@ -21,12 +21,6 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    /*if (name === "") return alert("Ingresa tu nombre");
-    if (email === "") return alert("Ingresa tu mail");
-    else if (!emailRegex.test(email)) return alert("Mail inválido");
-    if (message === "") return alert("Ingresa tu mensaje");
-    else setStateButton(false);*/
-
     let data = {
       name,
       email,
