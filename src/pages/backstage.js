@@ -5,9 +5,9 @@ import SectionTwo from "@/components/backstage/sectionTwo";
 import dotenv from "dotenv";
 
 const Backstage = ({ data }) => {
-  let firstImages = data.slice(0,6);
+  let firstImages = data.slice(0,8);
   // console.log("firstImages", firstImages);
-  let restImages = data.slice(6, data.length);
+  let restImages = data.slice(8, data.length);
   // console.log("restImages", restImages);
 
   return (
