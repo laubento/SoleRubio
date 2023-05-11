@@ -39,6 +39,8 @@
   filter: initial;
   transition: none;
   pointer-events: none;
+  filter: initial;
+
   }
  
 }
