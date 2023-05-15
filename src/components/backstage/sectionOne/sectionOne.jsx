@@ -44,9 +44,7 @@ const SectionOne = ({ backImages }) => {
           alt=""
         />
       </div>
-      <div className={styles.background}>
-        <span >BACKSTAGE</span>
-      </div>
+    
     </div>
   );
 };
