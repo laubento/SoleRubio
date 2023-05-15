@@ -6,49 +6,24 @@ import style from "../../styles/campaigns.module.css";
 import { NameCampaigns } from "@/components/Campaigns/NameCampaigns/NameCampaigns";
 import Link from "next/link";
 export default function Campaign({ data, name }) {
-  let util = [
-    { name },
-    { name: "MICHAEL JORDAN" },
-    { name: "MICAEL PEPOLIN" },
-    { name: "RAMIRES JORDAN C3" },
-    { name: "MLOPILO" },
-    { name: "SSL" },
-    { name: "MICHAEL JORDAN GH" },
-    { name: "GRAN JULIAN JORDAN" },
-    { name: "JUJIL JORDAN" },
-    { name: "MICHAELO" },
-    { name: "MICHAEL D4" },
-    { name: "HILO HILO" },
-    { name: "MICHAEL JORDAN" },
-    { name: "MICHAEL JORDAN" },
-    { name: "MICHAEL JORDAN" },
-  ];
+  // let util = [
+  //   { name },
+  //   { name: "MICHAEL JORDAN" },
+  //   { name: "MICAEL PEPOLIN" },
+  //   { name: "RAMIRES JORDAN C3" },
+  //   { name: "MLOPILO" },
+  //   { name: "SSL" },
+  //   { name: "MICHAEL JORDAN GH" },
+  //   { name: "GRAN JULIAN JORDAN" },
+  //   { name: "JUJIL JORDAN" },
+  //   { name: "MICHAELO" },
+  //   { name: "MICHAEL D4" },
+  //   { name: "HILO HILO" },
+  //   { name: "MICHAEL JORDAN" },
+  //   { name: "MICHAEL JORDAN" },
+  //   { name: "MICHAEL JORDAN" },
+  // ];
 
-<<<<<<< HEAD
-  return (
-    <div className={style["id-container-main"]}>
-      <div className={style["container-campaigns"]}>
-        <NameCampaigns data={util} />
-        <div className={style["id-container-images"]}>
-          <h4>{name}</h4>
-          <div className={style["id-container-img"]}>
-            {data.map((el, i) => {
-              return (
-                <Image
-                  className={style.img}
-                  key={i}
-                  src={el}
-                  alt={name}
-                  width={450}
-                  height={450}
-                />
-              );
-            })}
-          </div>
-          <h5>
-            <Link href={"/campaigns"}>Volver a campañas</Link>
-          </h5>
-=======
     let util = [{ name }, { name: 'MICHAEL JORDAN' }, { name: 'MICAEL PEPOLIN' }, { name: 'RAMIRES JORDAN C3' }, { name: 'MLOPILO' }, { name: 'SSL' }, { name: 'MICHAEL JORDAN GH' }, { name: 'GRAN JULIAN JORDAN' }, { name: 'JUJIL JORDAN' }, { name: 'MICHAELO' }, { name: 'MICHAEL D4' }, { name: 'HILO HILO' }, { name: 'MICHAEL JORDAN' }, { name: 'MICHAEL JORDAN' }, { name: 'MICHAEL JORDAN' }]
 
 
@@ -69,13 +44,8 @@ export default function Campaign({ data, name }) {
                     </div>
                     <h5><Link href={'/campaigns'}>Volver a campañas</Link></h5>
                 </div>
-
-
-            </div>
->>>>>>> ac2afa90f5612d1ab7a46420988b0cb185cec157
+           </div>
         </div>
-      </div>
-    </div>
   );
 }
 
