@@ -209,7 +209,7 @@
   .photo6 {
     margin-right: 2rem;
     width: 80%;
-    filter: none;
+    filter: brightness(1)
   }
 
   .photo3,

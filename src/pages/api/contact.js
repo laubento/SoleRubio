@@ -59,7 +59,7 @@ export default function (req, res) {
 
   const mailData = {
     from: ACCOUNT,
-    to: "agus.zanetti4@gmail.com",
+    to: "msolerubio@gmail.com",
     subject: `Mensaje de ${req.body.name}`,
     text: req.body.message + req.body.email,
     html: messageHtml,

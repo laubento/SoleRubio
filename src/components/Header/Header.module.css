@@ -100,8 +100,11 @@
     position: fixed;
     margin: initial;
     margin-left: 50px;
+    /* margin-top: 2rem; */
+    /* margin-left: 4rem; */
     z-index: 209;
-    width: 8rem;
+    width: 10rem;
+    /* height: auto; */
   }
 
    .navContainerOpen {
@@ -116,24 +119,32 @@
     flex-direction: column;
     z-index: 80;
   }
-
   .navContainerClosed {
     display: none;
   }
-
   .container a {
     height: 50px;
     border: none;
   }
-
   .container button:active {
     border: none;
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 300px) {
+=======
+/* .contact:hover {
+  color: #c9c9c9;
+  transition: all 0.5s;
+} */
+
+@media (max-width: 330px) {
+>>>>>>> 43d912b04ef184fdd02a1630e81f454b5487c5d1
   .navContainerOpen {
     width: 100%;
   }
-
+  .openLogo{
+    width: 8rem;
+  }
 }

@@ -7,11 +7,10 @@ import { Extras } from "@/components/Extras/Extras";
 import { Slider } from "@/components/Home/Slider/Slider";
 import { About } from "@/components/Home/About/About";
 import style from "../styles/index.module.css";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({data}) {
-
+export default function Home({ data }) {
   return (
     <main>
       <Head>
@@ -19,21 +18,30 @@ export default function Home({data}) {
       </Head>
 
       <div>
-        <Slider data={data.Slider}/>
+        <Slider data={data.Slider} />
       </div>
 
       <div>
         <Extras props={"line"} />
-        <About data={data.About}/>
+        <About data={data.About} />
       </div>
 
       <div className={style["container-highlights"]}>
         <Extras props={"line"} />
-        <Highlights data={data.Highlights}/>
+        <Highlights data={data.Highlights} />
         <Extras props={"line"} />
       </div>
       <div className={style["container-contact"]}>
-      <h2 style={{fontSize: "30px", fontWeight: "100", marginBottom: "0", marginTop:"40px"}}>CONTACTO</h2>
+        <h2
+          style={{
+            fontSize: "30px",
+            fontWeight: "100",
+            marginBottom: "0",
+            marginTop: "40px",
+          }}
+        >
+          CONTACTAME
+        </h2>
         <Contact />
       </div>
     </main>
@@ -44,39 +52,48 @@ export async function getStaticProps() {
   dotenv.config();
   const name = process.env.CLOUD_NAME;
   const key = process.env.CLOUD_KEY;
-  const secret = process.env.CLOUD_SECRET
-  let info = {}
+  const secret = process.env.CLOUD_SECRET;
+  let info = {};
 
-  await fetch(`https://api.cloudinary.com/v1_1/${name}/resources/image/upload?prefix=Inicio/&max_results=500`, {
-      method: 'GET',
+  await fetch(
+    `https://api.cloudinary.com/v1_1/${name}/resources/image/upload?prefix=Inicio/&max_results=500`,
+    {
+      method: "GET",
       headers: {
-          'Authorization': 'Basic ' + btoa(`${key}:${secret}`)
-      }
-  })
-      .then(response => response.json())
-      .then((data) => {
-          let Slider = []
-          let About = []
-          let Highlights = []
-          data.resources.forEach(item => {
-            let name = item.folder.split('/') 
-            let nameHighlightsArray = []
-            let nameHighlights = []
-            name[1] === 'Destacadas' ? nameHighlightsArray = item.public_id.split('/') : null
-            name[1] === 'Destacadas' ? nameHighlights = nameHighlightsArray[2].split('_') : null
-            name[1] === 'Destacadas' ? nameHighlights.pop() : null
-            name[1] === 'Destacadas' ? Highlights.push({url: item.url, name: nameHighlights.join(' ')}) : null
-            name[1] === 'About' ? About.push(item.url) : null
-            name[1] === 'Slider' ? Slider.push(item.url) : null
-          })
-          let destacada = {Slider: Slider, About: About, Highlights: Highlights}
-          return info = destacada
-      })
-      .catch(error => console.error(error))
+        Authorization: "Basic " + btoa(`${key}:${secret}`),
+      },
+    }
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      let Slider = [];
+      let About = [];
+      let Highlights = [];
+      data.resources.forEach((item) => {
+        let name = item.folder.split("/");
+        let nameHighlightsArray = [];
+        let nameHighlights = [];
+        name[1] === "Destacadas"
+          ? (nameHighlightsArray = item.public_id.split("/"))
+          : null;
+        name[1] === "Destacadas"
+          ? (nameHighlights = nameHighlightsArray[2].split("_"))
+          : null;
+        name[1] === "Destacadas" ? nameHighlights.pop() : null;
+        name[1] === "Destacadas"
+          ? Highlights.push({ url: item.url, name: nameHighlights.join(" ") })
+          : null;
+        name[1] === "About" ? About.push(item.url) : null;
+        name[1] === "Slider" ? Slider.push(item.url) : null;
+      });
+      let destacada = { Slider: Slider, About: About, Highlights: Highlights };
+      return (info = destacada);
+    })
+    .catch((error) => console.error(error));
 
   return {
-      props: {
-          data: info
-      }
-  }
+    props: {
+      data: info,
+    },
+  };
 }

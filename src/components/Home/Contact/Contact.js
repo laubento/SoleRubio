@@ -1,13 +1,15 @@
 import React from "react";
-import Budget from "./Form";
+import Form from "./Form";
 import style from "./contact.module.css";
 import Link from "next/link";
 import { CiMail, CiFacebook, CiInstagram } from "react-icons/ci";
+import wtsp from "../../../../public/icons8-whatsapp.svg";
+import Image from "next/image";
 
 const Contact = () => {
   return (
     <div className={style.container} id="contact">
-      <Budget />
+      <Form />
       <div className={style.contact}>
         <Link
           className={style.social}
@@ -16,6 +18,14 @@ const Contact = () => {
         >
           <CiInstagram className={style.logo} />
           <span>/solerubio</span>
+        </Link>
+        <Link
+          className={style.social}
+          href="https://wa.me/5491140617484"
+          target="_blank"
+        >
+          <Image src={wtsp} className={style.logo} />
+          <span>+ 54 91140617484</span>
         </Link>
         <Link
           className={style.social}
