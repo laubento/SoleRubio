@@ -4,13 +4,7 @@ import dotenv from "dotenv";
 
 const Backstage = ({ data }) => {
   let firstImages = data.slice(0,8);
-<<<<<<< HEAD
   let restImages = data.slice(8, data.length);
-=======
-  // console.log("firstImages", firstImages);
-  let restImages = data.slice(8, data.length);
-  // console.log("restImages", restImages);
->>>>>>> 43d912b04ef184fdd02a1630e81f454b5487c5d1
 
   return (
     <main>
