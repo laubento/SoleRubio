@@ -16,31 +16,16 @@
   z-index: -1;
 }
 
-/* .background {
-  width: 95%;
-  display: flex;
-  height: 100%;
-    position: relative;
-  transform: rotate(-90deg);
-  position: fixed;
-  z-index: -1;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: flex-end;
-} */
-
-/* .background span{
-  opacity: 0.5;
-font-size: 190px;  
-} */
-
 .grid {
   width: 60%;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  /* grid-template-columns: repeat(16, 1fr); */
+  grid-template-columns: repeat(16, 50px);
+
   grid-template-rows: repeat(24, 4rem);
   margin-bottom: 3rem;
 }
+
 
 .title1 {
   opacity: 0.5;
@@ -74,6 +59,79 @@ font-size: 190px;
   grid-row: 23;
   font-size: 1.3rem;
 }
+
+/* .position{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: yellow;
+}
+
+.photo1{
+  position: absolute;
+  width: 20%;
+  height: 20rem;
+  object-fit: cover;  
+  top:10rem;
+  left: 20rem;
+}
+
+.photo2{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover; 
+  top: 15rem;
+  right: 10rem;
+}
+
+.photo3{
+  position: absolute;  
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;
+  top: 50rem;  
+}
+.photo4{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;  
+  top: 50rem;  
+  left: 50rem;
+}
+.photo5{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;  
+  top: 80rem;  
+  left: 10rem;
+}
+.photo6{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;  
+  top: 90rem;  
+  left: 50rem;
+}
+.photo7{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;  
+  top: 150rem;  
+  left: 5rem;
+}
+.photo8{
+  position: absolute;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;  
+  top: 150rem;  
+  left: 80rem;
+} */
 
 .photo1 {
   grid-column: 1/11;
@@ -152,7 +210,7 @@ font-size: 190px;
   height: 100%;
   object-fit: cover;
   transition: all 0.9s;
-}
+} 
 
 .photo1:hover,
 .photo2:hover,
@@ -170,17 +228,28 @@ font-size: 190px;
 }
 
 .photo1:hover {
+  width: 20rem;
+  height: auto;
   grid-column: 1/11;
 }
 
 .photo2:hover {
-  grid-column: 8/18;
+  /* grid-column: 8/18; */
   border-radius: 1em;
   border: 2px solid white;
+  width: 20rem;
+  height: auto;
 }
 
 .photo3:hover {
-  grid-column: 1/11;
+  /* min-width: 20rem;
+  max-width: 30rem;
+  height: auto;
+  max-height: 30rem; */
+  min-height: 18rem;
+  grid-column: 2/8;
+  /* grid-column: 1/11; */
+  
 }
 .photo4:hover {
   object-fit: contain;

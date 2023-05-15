@@ -7,7 +7,7 @@ import style from "./Wsp.module.css"
 const Wsp = () => {
   return (
     <div>
-      <Link target="_blank" href="https://wa.me/5491132911607">
+      <Link target="_blank" href="https://wa.me/5491140617484">
         <Image
         src={wtsp}
         className={style.logo}

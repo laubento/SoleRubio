@@ -8,6 +8,8 @@ const SectionOne = ({ backImages }) => {
   return (
     <div className={styles.container}>
       <div className={styles.grid}>
+      {/* <div className={styles.position}> */}
+
         <img src={backImages[0]} alt="image" className={styles.photo1} />
         <h2 className={styles.title1}>FOTOGRAFIA</h2>
         <img src={backImages[1]} alt="image" className={styles.photo2} />
