@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from './Navlink.module.css'
 
-const Navlink = ({ href, children }) => {
+const Navlink = ({ href, connect }) => {
   const [ariaCurrent, setAriaCurrent] = useState();
 
   const { asPath } = useRouter();
@@ -17,7 +17,7 @@ const Navlink = ({ href, children }) => {
   return (
     <div className={styles.link}>
       <Link href={href} aria-current={ariaCurrent}>
-        {children}
+        {connect}
       </Link>
     </div>
   );
