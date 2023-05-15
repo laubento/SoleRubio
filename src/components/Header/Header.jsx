@@ -36,10 +36,10 @@ const Header = () => {
       <div      
         className={open ? styles.navContainerOpen : styles.navContainerClosed} onClick={handleClose}
       >              
-        <NavLink href="/" children={"INICIO"} />
-        <NavLink href="/campaigns" children={"SHOOTING"} />
-        <NavLink href="/backstage" children={"BACKSTAGE"} />
-        <NavLink href="/press" children={"PRENSA"} />
+        <NavLink href="/" children="INICIO" />
+        <NavLink href="/campaigns" children="SHOOTING" />
+        <NavLink href="/backstage" children="BACKSTAGE" />
+        <NavLink href="/press" children="PRENSA" />
         <Link className={styles.contact} href="/#contact">CONTACTO</Link>
       </div> 
       </div>       
