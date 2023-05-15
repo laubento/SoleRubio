@@ -154,17 +154,8 @@
     display: grid;
     grid-template-rows: repeat(24, 2rem);
   }
-  /* .photo1 img,
-  .photo2 img,
-  .photo3 img,
-  .photo4 img,
-  .photo5 img,
-  .photo6 img,
-  .photo7 img,
-  .photo8 img {
-   max-width: 18rem;
-  } */
 }
+
 @media (max-width: 1290px) {
   .grid {
     display: grid;
