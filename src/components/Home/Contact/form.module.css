@@ -22,6 +22,8 @@
 
 .inputMessage {
     width: 100%;
+    max-width: 350px;
+    max-height: 162px;
     background-color: transparent;
     border: none;
     border-bottom: solid 0.5px var(--main-color);    

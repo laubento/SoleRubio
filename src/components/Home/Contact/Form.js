@@ -11,7 +11,6 @@ const Form = () => {
 
   let stateButton = true;
 
-  console.log(name, email, message);
   const emailRegex =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   let checkEmail = emailRegex.test(email);

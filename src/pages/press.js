@@ -3,8 +3,6 @@ import style from "../styles/press.module.css";
 import dotenv from "dotenv";
 
 export default function Press({ data }) {
-  console.log(data);
-
   return (
     <div className={style.containerPress}>
       <PressComp data={data} />
