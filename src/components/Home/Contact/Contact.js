@@ -25,7 +25,7 @@ const Contact = () => {
           target="_blank"
         >
           <Image src={wtsp} className={style.logo} />
-          <span>+ 54 1140617484</span>
+          <span>+ 54 91140617484</span>
         </Link>
         <Link
           className={style.social}

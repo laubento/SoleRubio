@@ -6,11 +6,11 @@
 }
 
 .background {
-  /* opacity: 0.3; */
+  opacity: 0.3;
   margin: 3rem;
-  /* position: absolute; */
+  position: absolute;
   width: 6rem;
-  height: auto;
+  min-height: 50rem;
   top: 9rem;
   right: 5rem;
   z-index: -1;
@@ -19,9 +19,7 @@
 .grid {
   width: 60%;
   display: grid;
-  /* grid-template-columns: repeat(16, 1fr); */
-  grid-template-columns: repeat(16, 50px);
-
+  grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(24, 4rem);
   margin-bottom: 3rem;
 }
@@ -40,8 +38,6 @@
   grid-column: 8/11;
   grid-row: 10;
   font-size: 1.3rem;
-  transition-duration: 0.5s;
-  transition: ease-in-out;
 }
 
 .title3 {
@@ -60,157 +56,52 @@
   font-size: 1.3rem;
 }
 
-/* .position{
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: yellow;
-}
-
-.photo1{
-  position: absolute;
-  width: 20%;
-  height: 20rem;
-  object-fit: cover;  
-  top:10rem;
-  left: 20rem;
-}
-
-.photo2{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover; 
-  top: 15rem;
-  right: 10rem;
-}
-
-.photo3{
-  position: absolute;  
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;
-  top: 50rem;  
-}
-.photo4{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;  
-  top: 50rem;  
-  left: 50rem;
-}
-.photo5{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;  
-  top: 80rem;  
-  left: 10rem;
-}
-.photo6{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;  
-  top: 90rem;  
-  left: 50rem;
-}
-.photo7{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;  
-  top: 150rem;  
-  left: 5rem;
-}
-.photo8{
-  position: absolute;
-  width: 50rem;
-  height: 30rem;
-  object-fit: cover;  
-  top: 150rem;  
-  left: 80rem;
-} */
-
 .photo1 {
-  grid-column: 1/11;
+  grid-column: 1/10;
   grid-row: 1/6;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition-duration: 0.9s;
 }
 
 .photo2 {
-  background: var(--main-background);
   grid-column: 9/16;
   grid-row: 2/7;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   filter: brightness(0.5);
-  border: 4px solid black;
-  transition: all 0.9s;
 }
 
 .photo3 {
   grid-column: 2/8;
   grid-row: 7/13;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.9s;
 }
 
 .photo4 {
   grid-column: 10/16;
   grid-row: 8/13;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.9s;
 }
 
 .photo5 {
   grid-column: 1/7;
   grid-row: 15/21;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.9s;
   z-index: 10;
-  border: 6px solid black;
 }
 
 .photo6 {
   grid-column: 8/16;
   grid-row: 14/19;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.9s;
   filter: brightness(0.5);
 }
 
 .photo7 {
-  grid-column: 3/11;
+  grid-column: 3/10;
   grid-row: 20/25;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all 0.9s;
 }
 
 .photo8 {
-  grid-column: 12/16;
+  grid-column: 11/16;
   grid-row: 20/25;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.9s;
-} 
+}
 
 .photo1:hover,
 .photo2:hover,
@@ -220,36 +111,25 @@
 .photo6:hover,
 .photo7:hover,
 .photo8:hover {
-  object-fit: contain;
+  overflow: visible;
   filter: brightness(1);
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.9s;
   z-index: 300;
 }
 
 .photo1:hover {
-  width: 20rem;
-  height: auto;
   grid-column: 1/11;
 }
 
 .photo2:hover {
-  /* grid-column: 8/18; */
+  grid-column: 8/18;
   border-radius: 1em;
   border: 2px solid white;
-  width: 20rem;
-  height: auto;
 }
 
 .photo3:hover {
-  /* min-width: 20rem;
-  max-width: 30rem;
-  height: auto;
-  max-height: 30rem; */
-  min-height: 18rem;
-  grid-column: 2/8;
-  /* grid-column: 1/11; */
-  
+  grid-column: 1/11;
 }
 .photo4:hover {
   object-fit: contain;
@@ -269,21 +149,7 @@
 }
 
 .photo8:hover {
-  grid-column: 7/19;
-}
-
-@media (max-height: 1368px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 3rem);
-  }
-}
-
-@media (max-height: 802px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 3.5rem);
-  }
+  transform-origin: right;
 }
 
 @media (max-width: 835px) {
@@ -291,25 +157,52 @@
     display: grid;
     grid-template-rows: repeat(24, 2rem);
   }
-  
+}
+
+@media (max-width: 1025px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(24, 2rem);
+  }
+  /* .photo1 img,
+  .photo2 img,
+  .photo3 img,
+  .photo4 img,
+  .photo5 img,
+  .photo6 img,
+  .photo7 img,
+  .photo8 img {
+   max-width: 18rem;
+  } */
+}
+@media (max-width: 1290px) {
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(24, 2.5rem);
+  }
+  .photo1 img,
+  .photo2 img,
+  .photo3 img,
+  .photo4 img,
+  .photo5 img,
+  .photo6 img,
+  .photo7 img,
+  .photo8 img {
+    max-width: 22rem;
+  }
 }
 
 @media (max-width: 550px) {
-
   .background {
     position: fixed;
+    min-height: 30rem;
+    top: 4rem;
     left: 0px;
     z-index: -1;
-    width: 5rem;
-    height: auto;
+    width: auto;
   }
 
-  /* .background {
-    position: fixed;
-    left: 0rem;
-  } */
-  
-    .grid {
+  .grid {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -353,7 +246,6 @@
     transform: unset;
     margin: 0;
     margin-left: 8rem;
-
   }
 
   .photo1,
@@ -363,8 +255,7 @@
   .photo5,
   .photo6,
   .photo7,
-  .photo8{
-    pointer-events: none 
+  .photo8 {
+    pointer-events: none;
   }
-
 }

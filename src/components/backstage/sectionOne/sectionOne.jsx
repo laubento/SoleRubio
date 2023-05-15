@@ -1,40 +1,52 @@
 import styles from "./sectionOne.module.css";
 import backgroundImg from "../../../../public/backstage.png";
-// import imgOne from "../../../../public/image1.jpg";
-// import img2 from "../../../../public/image2.jpg";
 import Image from "next/image";
 
 const SectionOne = ({ backImages }) => {
   return (
     <div className={styles.container}>
       <div className={styles.grid}>
-      {/* <div className={styles.position}> */}
-
-        <img src={backImages[0]} alt="image" className={styles.photo1} />
+        <div className={styles.photo1}>
+          <img src={backImages[0]} alt="image" />
+        </div>
         <h2 className={styles.title1}>FOTOGRAFIA</h2>
-        <img src={backImages[1]} alt="image" className={styles.photo2} />
+        <div className={styles.photo2}>
+          <img src={backImages[1]} alt="image" />
+        </div>
+
         <h2 className={styles.title2}>ADVERTISING</h2>
-        <img src={backImages[2]} alt="image" className={styles.photo3} />
-        <img src={backImages[3]} alt="image" className={styles.photo4} />
+        <div className={styles.photo3}>
+          <img src={backImages[2]} alt="image" />
+        </div>
+        <div className={styles.photo4}>
+          <img src={backImages[3]} alt="image" />
+        </div>
         <h2 className={styles.title3}>BOOKS</h2>
-        <img src={backImages[4]} alt="image" className={styles.photo5} />
-        <img src={backImages[5]} alt="image" className={styles.photo6} />
+        <div className={styles.photo5}>
+          <img src={backImages[4]} alt="image" />
+        </div>
+        <div className={styles.photo6}>
+          <img src={backImages[5]} alt="image" />
+        </div>
         <h2 className={styles.title4}>EDITORIAL</h2>
-        <img src={backImages[6]} alt="image" className={styles.photo7} />
-        <img src={backImages[7]} alt="image" className={styles.photo8} />
+        <div className={styles.photo7}>
+          <img src={backImages[6]} alt="image" />
+        </div>
+        <div className={styles.photo8}>
+          <img src={backImages[7]} alt="image" />
+        </div>
 
         <Image
           src={backgroundImg}
           width={900}
-          height={200}
+          height={900}
           className={styles.background}
           alt=""
-          style={{ opacity: "0.3", margin: "3rem", position: "fixed" }}
         />
       </div>
-      {/* <div className={styles.background}>
+      <div className={styles.background}>
         <span >BACKSTAGE</span>
-      </div> */}
+      </div>
     </div>
   );
 };
