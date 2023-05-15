@@ -24,6 +24,7 @@ export default function Campaign({ data, name }) {
     { name: "MICHAEL JORDAN" },
   ];
 
+<<<<<<< HEAD
   return (
     <div className={style["id-container-main"]}>
       <div className={style["container-campaigns"]}>
@@ -47,6 +48,31 @@ export default function Campaign({ data, name }) {
           <h5>
             <Link href={"/campaigns"}>Volver a campañas</Link>
           </h5>
+=======
+    let util = [{ name }, { name: 'MICHAEL JORDAN' }, { name: 'MICAEL PEPOLIN' }, { name: 'RAMIRES JORDAN C3' }, { name: 'MLOPILO' }, { name: 'SSL' }, { name: 'MICHAEL JORDAN GH' }, { name: 'GRAN JULIAN JORDAN' }, { name: 'JUJIL JORDAN' }, { name: 'MICHAELO' }, { name: 'MICHAEL D4' }, { name: 'HILO HILO' }, { name: 'MICHAEL JORDAN' }, { name: 'MICHAEL JORDAN' }, { name: 'MICHAEL JORDAN' }]
+
+
+    return (
+
+        <div className={style["id-container-main"]}>
+            <div className={style["container-campaigns"]}>
+                <NameCampaigns data={util} />
+                <div className={style["id-container-images"]}>
+                    <h4>{name}</h4>
+                    <h1><Link href={'/campaigns'}>{'↩'}</Link></h1>
+                    <div className={style["id-container-img"]}>
+                        {data.map((el,i) => {
+                            return(
+                                <Image className={style.img} key={i} src={el} alt={name}  width={450} height={450}/>
+                            )
+                        })}
+                    </div>
+                    <h5><Link href={'/campaigns'}>Volver a campañas</Link></h5>
+                </div>
+
+
+            </div>
+>>>>>>> ac2afa90f5612d1ab7a46420988b0cb185cec157
         </div>
       </div>
     </div>

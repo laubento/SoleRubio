@@ -1,19 +1,15 @@
-// import Image from "next/image";
 import SectionOne from "@/components/backstage/sectionOne/sectionOne";
 import SectionTwo from "@/components/backstage/sectionTwo";
-// import backgroundImg from "../../public/backstage.png";
 import dotenv from "dotenv";
 
 const Backstage = ({ data }) => {
   let firstImages = data.slice(0,8);
-  // console.log("firstImages", firstImages);
   let restImages = data.slice(8, data.length);
-  // console.log("restImages", restImages);
 
   return (
     <main>
       <SectionOne backImages={firstImages} />
-      <SectionTwo backImages={restImages} />      
+      {/* <SectionTwo backImages={restImages} />       */}
     </main>
   );
 };
@@ -41,7 +37,6 @@ export async function getStaticProps() {
       let imgBackstage = [];
       data.resources.forEach((el) => {
         imgBackstage.push(el.url);
-        //  console.log('imgBackstage', imgBackstage)
         return (images = imgBackstage);
       });
     })
