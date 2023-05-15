@@ -9,7 +9,7 @@ const Backstage = ({ data }) => {
   return (
     <main>
       <SectionOne backImages={firstImages} />
-      {/* <SectionTwo backImages={restImages} />       */}
+      <SectionTwo backImages={restImages} />      
     </main>
   );
 };
