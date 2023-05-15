@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .id-container-campaigns{
     width: 70%;
@@ -32,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .id-title{
     /* position: relative; */
@@ -52,6 +54,13 @@
     font-size: 35px;
     font-family: var(--font-primary);
     margin: 0px 0px 10px;
+}
+.id-container-images h1{
+    position: absolute;
+    top: 0.1%;
+    left: 0;
+    margin: 0px;
+    display: none;
 }
 .id-container-images h5{
     display: none;
@@ -97,6 +106,9 @@
         grid-template-columns: 100%;
     }
     .id-container-images h5{
+        display: block;
+    }
+    .id-container-images h1{
         display: block;
     }
 }

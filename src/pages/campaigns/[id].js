@@ -17,6 +17,7 @@ export default function Campaign({ data, name }) {
                 <NameCampaigns data={util} />
                 <div className={style["id-container-images"]}>
                     <h4>{name}</h4>
+                    <h1><Link href={'/campaigns'}>{'↩'}</Link></h1>
                     <div className={style["id-container-img"]}>
                         {data.map((el,i) => {
                             return(
