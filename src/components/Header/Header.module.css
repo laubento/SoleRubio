@@ -24,13 +24,11 @@
   padding-top: 6rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
 }
 
 .logo,
 .openLogo {
   margin-bottom: 4rem;
-  /* width: auto; */
   height: auto; 
 }
 
@@ -132,11 +130,6 @@
     border: none;
   }
 }
-
-/* .contact:hover {
-  color: #c9c9c9;
-  transition: all 0.5s;
-} */
 
 @media (max-width: 300px) {
   .navContainerOpen {

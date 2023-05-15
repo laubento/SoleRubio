@@ -1,5 +1,4 @@
 .container {
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -7,44 +6,23 @@
 }
 
 .background {
-
-  opacity: 0.3; 
+  opacity: 0.3;
   margin: 3rem;
- position: absolute; 
+  position: absolute;
   width: 6rem;
-  height: auto;
+  min-height: 50rem;
   top: 9rem;
   right: 5rem;
   z-index: -1;
 }
 
-/* .background {
-  width: 95%;
-  display: flex;
-  height: 100%;
-    position: relative;
-  transform: rotate(-90deg);
-  position: fixed;
-  z-index: -1;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: flex-end;
-} */
-
-/* .background span{
-  opacity: 0.5;
-font-size: 190px;  
-} */
-
 .grid {
- 
   width: 60%;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(24, 3.5rem);
   margin-bottom: 3rem;
 }
-
 
 .title1 {
   opacity: 0.5;
@@ -59,8 +37,6 @@ font-size: 190px;
   grid-column: 8/11;
   grid-row: 10;
   font-size: 1.3rem;
-  /*transition-duration: 0.5s;
-  transition: ease-in-out;*/
 }
 
 .title3 {
@@ -79,105 +55,66 @@ font-size: 190px;
   font-size: 1.3rem;
 }
 
-/*.photo1 {
-  grid-column: 1/10;
-  grid-row: 1/6;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition-duration: 0.9s;
-}*/
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5,
+.photo6,
+.photo7,
+.photo8 {
+  object-fit: none;
+  overflow: hidden;
+  transition: all 0.9s;
+}
+
+.grid img {
+  height: auto;
+  max-height: 22rem;
+}
 
 .photo1 {
   grid-column: 1/10;
   grid-row: 1/6;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all 0.9s;
-}
-.photo1 img{
-  min-width: 15rem;
-  max-width: 30rem;
-  height: auto;
-  max-height: 20rem;  
-}
-
-.photo1:hover {
-  overflow: visible;
 }
 
 .photo2 {
-  background: var(--main-background);
   grid-column: 9/16;
   grid-row: 2/7;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   filter: brightness(0.5);
-  border: 4px solid black;
-  transition: all 0.9s;
 }
 
 .photo3 {
   grid-column: 2/8;
   grid-row: 7/13;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.9s;
 }
 
 .photo4 {
   grid-column: 10/16;
   grid-row: 8/13;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.9s;
 }
 
 .photo5 {
   grid-column: 1/7;
   grid-row: 15/21;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.9s;
   z-index: 10;
-  border: 6px solid black;
 }
 
 .photo6 {
   grid-column: 8/16;
   grid-row: 14/19;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.9s;
   filter: brightness(0.5);
 }
 
 .photo7 {
   grid-column: 3/10;
   grid-row: 20/25;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  transition: all 0.9s;
 }
 
 .photo8 {
   grid-column: 11/16;
   grid-row: 20/25;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.9s;
 }
-
 .photo1:hover,
 .photo2:hover,
 .photo3:hover,
@@ -186,74 +123,29 @@ font-size: 190px;
 .photo6:hover,
 .photo7:hover,
 .photo8:hover {
-  object-fit: contain;
+  overflow: visible;
   filter: brightness(1);
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.9s;
   z-index: 300;
 }
 
 .photo1:hover {
-  grid-column: 1/10;
-  transform-origin: top;
- 
-}
-
-.photo2:hover {
-  grid-column: 9/16;
-  border-radius: 1em;
-  border: 2px solid white;
   transform-origin: top;
 }
 
-.photo3:hover {
-  grid-column: 2/8;
-}
-.photo4:hover {
-  object-fit: contain;
-  grid-column: 10/16;
-  transform: scale(1.5);
-  transition: all 1.2s;
-}
-
-.photo5:hover {
-  grid-column: 1/7;
-}
-
-.photo6:hover {
-  grid-column: 8/16;
-  transform: scale(1.5);
-  transition: all 1.2s;
-
-}
-
-.photo7:hover {
-  grid-column: 3/10;
-}
-
+.photo2:hover,
+.photo4:hover,
+.photo6:hover,
 .photo8:hover {
-  grid-column: 11/16;
-  transform: scale(1.7);
-  transition: all 1.2s;
+  transform-origin: right;
 }
-
-
-
-
-/*
-@media (min-height: 802px) {
-  .grid {
-    display: grid;
-    grid-template-rows: repeat(24, 3.5rem);
-  }
-}*/
 
 @media (max-width: 835px) {
   .grid {
     display: grid;
     grid-template-rows: repeat(24, 2rem);
   }
-  
 }
 
 @media (max-width: 1024px) {
@@ -261,33 +153,45 @@ font-size: 190px;
     display: grid;
     grid-template-rows: repeat(24, 2rem);
   }
-  
+  .photo1 img,
+  .photo2 img,
+  .photo3 img,
+  .photo4 img,
+  .photo5 img,
+  .photo6 img,
+  .photo7 img,
+  .photo8 img {
+    width: 20rem;
+  }
 }
-
-@media (max-width: 1280px) {
+@media (max-width: 1290px) {
   .grid {
     display: grid;
     grid-template-rows: repeat(24, 2.5rem);
   }
+  .photo1 img,
+  .photo2 img,
+  .photo3 img,
+  .photo4 img,
+  .photo5 img,
+  .photo6 img,
+  .photo7 img,
+  .photo8 img {
+    max-width: 26rem;
+  }
 }
 
 @media (max-width: 550px) {
-
   .background {
     position: fixed;
+    min-height: 30rem;
     top: 4rem;
     left: 0px;
     z-index: -1;
-    width: 5rem;
-    height: auto;
+    width: auto;
   }
 
-  /* .background {
-    position: fixed;
-    left: 0rem;
-  } */
-  
-    .grid {
+  .grid {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -331,7 +235,6 @@ font-size: 190px;
     transform: unset;
     margin: 0;
     margin-left: 8rem;
-
   }
 
   .photo1,
@@ -341,8 +244,7 @@ font-size: 190px;
   .photo5,
   .photo6,
   .photo7,
-  .photo8{
-    pointer-events: none 
+  .photo8 {
+    pointer-events: none;
   }
-
 }
